@@ -528,9 +528,6 @@
   }
 }
 
-#text-spent-mins {
-}
-
 @media (min-width: 850px) {
   .div-histo {
     margin-left: 35vw;
@@ -1376,5 +1373,10 @@ a {
 
 #div-choose-subject-1 {
   background-color: rgba(0,0,0,0.3);
+}
+
+#text-spent-mins {
+  color: rgb(255,255,255);
+  font-size: 20px;
 }
 
