@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tuto</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Payment-Form.css">
+    <link rel="stylesheet" href="assets/css/BS4-BetterNav.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Hover.css">
+    <link rel="stylesheet" href="assets/css/Photo%20upload.css">
+    <link rel="stylesheet" href="assets/css/Style-rating-system.css">
+    <link rel="stylesheet" href="assets/css/Styles-website.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
+</head>
+
+<body>
+    <form class="register-form">
+        <h2 class="text-center">Créez votre compte<br></h2>
+        <h2 class="text-center form-heading">Elève</h2>
+        <h4 class="text-center form-subheading">Vos Informations<br></h4><label class="form-label">Nom</label><input class="form-control form-input" type="text" required="" inputmode="latin-name"><label class="form-label">Prénom</label><input class="form-control form-input" type="text" required=""
+            inputmode="latin-name"><label class="form-label">Date de naissance</label><input class="form-control form-input" type="date" required=""><label class="form-label">Classe</label><select class="form-control form-input" required=""><optgroup label=""><option value="12" selected="">CP</option><option value="13">CE1</option><option value="14">CE2</option><option value="15">CM1</option><option value="">CM2</option><option value="">6ÈME</option><option value="">5ÈME</option><option value="">4ÈME</option><option value="">3ÈME</option></optgroup></select>
+        <label
+            class="form-label">Email</label><input class="form-control form-input" type="text" required="" inputmode="email"><label class="form-label">Telephone Mobile</label><input class="form-control form-input" type="tel">
+            <div id="Submit-buttons" class="div-2buttons" style="height: 52px;margin-top: 30px;"><button class="btn btn-primary" type="button" id="Button-Ajouter" style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;width: 45%;line-height: 25px;">Ajouter un&nbsp;élève</button><a class="btn btn-primary" role="button"
+                    href="#modal-welcome" id="Button-Suivant" data-toggle="modal" style="width: 45%;line-height: 25px;padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;">Créer mon Compte</a></div>
+    </form>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <form method="post" id="form-login">
+                        <h2 class="text-center" style="padding-bottom: 60px;">Accéder&nbsp;à mon compte<br></h2>
+                        <div class="form-group" style="font-size: 35px;"><input class="form-control" type="email" name="email" placeholder="Email" style="font-size: 20px;margin-bottom: 25px;"></div>
+                        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Mot de passe" style="font-size: 20px;"><button class="btn btn-primary btn-block shadow-lg" type="button" style="padding-bottom: 11px;background-color: #3ec1a9;font-size: 20px;margin-top: 55px;">Connexion</button></div>
+                        <a
+                            href="#" id="forgot" class="forgot" style="color: rgb(255,255,255);font-size: 15px;padding-top: 0px;margin-top: 45px;">Email ou mot de passe oublié?</a>
+                    </form><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body" style="background-color: #033d4f;height: 0px;padding: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;"></div>
+                <div class="modal-footer" style="background-color: #033d4f;padding: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-welcome">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="header-welcome" style="padding-bottom: 0px;">
+                    <form id="form-login" class="register-form" style="padding-bottom: 20px;margin-top: 20px;">
+                        <h2 class="text-center" id="heading-confirmation">Confirmation d'inscription</h2>
+                        <h4 class="text-center" id="bienvenue" style="padding-top: 0px;"><br>Bienvenue sur Tuto!</h4>
+                        <p class="text-center" id="paragraph-Subscription-Confirmation" style="font-size: 18px;margin-bottom: 50px;overflow: visible;"><br>Vous allez recevoir dans les prochaines minutes un email de confirmation.<br>Pour activer votre compte, veuillez cliquer sur le lien contenu dans l'email.</p>
+                    </form><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body" style="height: 0px;padding: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;"></div>
+                <div class="modal-footer" style="padding-top: 0;"><button class="btn btn-light" type="button" data-dismiss="" style="color: rgb(255,255,255);font-size: 20px;font-family: 'Gloria Hallelujah';">Accueil</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(10,65,88);">Contactez-nous</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body"><input type="text" placeholder="Nom" style="width: 100%;margin-bottom: 15px;"><input type="text" placeholder="Prénom" style="width: 100%;margin-bottom: 15px;"><input type="email" placeholder="Email" style="width: 100%;margin-bottom: 60px;">
+                    <label
+                        style="color: rgb(10,65,88);">Sujet: &nbsp;</label><input type="text" style="width: 87%;float: right;"><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Fermer</button><button class="btn btn-primary" type="button" id="bouton-envoyer"><img src="assets/img/send.png" style="width: 25px;height: 25px;position: relative;float: right;">Envoyer &nbsp;</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/BS4-BetterNav.js"></script>
+    <script src="assets/js/Contact-FormModal-Contact-Form-with-Google-Map.js"></script>
+    <script src="assets/js/full-screen.js"></script>
+    <script src="assets/js/Photo%20upload.js"></script>
+    <script src="assets/js/Review-rating-Star-Review-Button.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
