@@ -35,13 +35,13 @@ $("button").click(function(){
  $(this).toggleClass('rotator')  ; 
 })
 
-function changeimg()
+//function changeimg()
 {
-if(document.getElementById("expand").src = 'maximize.svg' )
-document.getElementById("expand").src = 'minimize.svg';
-else
-document.getElementById("expand").src = 'maximize.svg';
-}
+//if(document.getElementById("expand").src = 'maximize.svg' )
+//document.getElementById("expand").src = 'minimize.svg';
+//else
+//document.getElementById("expand").src = 'maximize.svg';
+}//
 
     
 
