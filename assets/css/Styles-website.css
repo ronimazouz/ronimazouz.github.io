@@ -47,7 +47,7 @@
   #Kid-name {
     width: 35vw;
     height: 35vw;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     font-size: 5vw;
     background-color: rgba(255,255,255,0.3);
   }
@@ -55,11 +55,14 @@
 
 #Button-Ajouter {
   width: 30vw;
-  height: 52px;
+  height: 60px;
   float: left;
   font-size: 20px;
   max-width: 250px;
   font-family: 'Gloria Hallelujah';
+  border: solid rgb(255,255,255);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: #517ca3;
 }
 
 #Button-Suivant {
@@ -70,6 +73,10 @@
   white-space: normal;
   max-width: 250px;
   float: right;
+  border: solid white;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: #517ca3;
+  font-family: 'Gloria Hallelujah';
 }
 
 #Kid-Name {
@@ -82,7 +89,7 @@
     width: 220px;
     height: 100px;
     font-size: 20px;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     background-color: rgba(255,255,255,0.3);
   }
 }
@@ -370,17 +377,22 @@
 
 #bouton-accueil {
   width: 20vw;
-  height: 70px;
+  height: 80px;
   min-width: 250px;
   font-family: 'Gloria Hallelujah';
   font-size: 25px;
+  border: solid white;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: #517ca3;
 }
 
 #bouton-annuler {
   width: 250px;
   height: 70px;
-  margin-top: 30px;
+  margin-top: 0px;
   font-family: 'Gloria Hallelujah';
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: #517ca3;
 }
 
 #bouton-ajouter-mins {
@@ -391,7 +403,10 @@
   font-size: 25px;
   padding-right: 10px;
   padding-left: 10px;
+  border: solid white;
   background-color: rgb(8,77,126);
+  box-shadow: 20px 38px 34px -26px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
 @media (max-width: 768px) {
@@ -427,6 +442,14 @@
   width: 100%;
   margin-bottom: 30px;
   margin-top: 40px;
+  font-size: 25px;
+  height: 52px;
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah';
+  border: solid white;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: #517ca3;
 }
 
 #heading-thank-you {
@@ -830,7 +853,7 @@ textarea {
   margin-top: 100px;
   font-family: Lato, sans-serif;
   font-weight: 300;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   font-family: 'Gloria Hallelujah', cursive;
 }
 
@@ -881,6 +904,9 @@ button, input {
   width: 255px;
   height: 52px;
   font-size: 20px;
+  border: solid white;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: #517ca3;
 }
 
 .register-form {
@@ -1378,5 +1404,24 @@ a {
 #text-spent-mins {
   color: rgb(255,255,255);
   font-size: 20px;
+}
+
+#Kid-name {
+  border-radius: 50% 75% 50% 75%/75% 65% 72% 50%;
+  transform: rotate(-2deg);
+  border: 2px solid white;
+}
+
+#button-call {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255,255,255,0.85);
+  background-image: url(../../assets/img/camcorder2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  /*border-radius: 50%;*/
+  outline: none;
+  border-radius: 50% 75% 50% 75%/75% 65% 72% 50%;
 }
 
