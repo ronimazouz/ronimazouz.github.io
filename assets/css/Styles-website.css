@@ -391,6 +391,7 @@
   height: 70px;
   margin-top: 0px;
   font-family: 'Gloria Hallelujah';
+  border: solid white;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   background-color: #517ca3;
 }
