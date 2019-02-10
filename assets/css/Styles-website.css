@@ -49,7 +49,7 @@
     height: 35vw;
     /*border-radius: 50%;*/
     font-size: 5vw;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.3);
   }
 }
 
@@ -90,7 +90,7 @@
     height: 100px;
     font-size: 20px;
     /*border-radius: 15px;*/
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.3);
   }
 }
 
@@ -152,7 +152,7 @@
 @media (max-width: 767px) {
   .div-list {
     border-radius: 0px;
-    border: 5px solid white;
+    border: 5px solid;
     border-image: url(../../assets/img/line.svg) 30 0 0 0 fill stretch stretch;
     -webkit-border-image: url(../../assets/img/line.svg) 30 0 0 0 fill stretch stretch;
     border-left: 0px;
@@ -947,67 +947,6 @@ button, input {
   background-color: #ea3375;
   position: fixed;
   z-index: 2;
-}
-
-.nav-effect * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-
-.nav-effect li {
-  display: inline-block;
-  list-style: outside none none;
-  margin: 0 1em;
-  padding: 0;
-}
-
-.nav-effect a {
-  padding: 0.5em 0.8em;
-  margin: 0.2em 0;
-  display: block;
-  color: rgba(255, 255, 255, 0.5);
-  position: relative;
-  text-decoration: none;
-}
-
-.nav-effect a:before, .nav-effect a:after {
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  content: '';
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  opacity: 0;
-}
-
-.nav-effect a:before {
-  left: 0;
-  top: 0;
-  border-left: 3px solid #ffffff;
-  border-top: 3px solid #ffffff;
-  -webkit-transform: translate(100%, 50%);
-  transform: translate(100%, 50%);
-}
-
-.nav-effect a:after {
-  right: 0;
-  bottom: 0;
-  border-right: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
-  -webkit-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
-}
-
-.nav-effect a:hover, .nav-effect .current a {
-  color: #ffffff;
-}
-
-.nav-effect a:hover:before, .nav-effect .current a:before, .nav-effect a:hover:after, .nav-effect .current a:after {
-  -webkit-transform: translate(0%, 0%);
-  transform: translate(0%, 0%);
-  opacity: 1;
 }
 
 @media (min-width: 768px) {
