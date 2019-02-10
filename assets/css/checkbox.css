@@ -40,6 +40,5 @@ input[type="checkbox"]:checked + label:before {
   padding-left: 15px;
   font-size: 20px;
   line-height: 1.2;
-  font-family: 'Gloria Hallelujah';
 }
 

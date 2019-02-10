@@ -38,8 +38,7 @@ body.side-menu-visible #side-menu {
 }
 
 #side-menu .close {
-  font-size: 80px;
-  font-family: 'Gloria Hallelujah';
+  font-size: 60px;
   font-weight: 200;
   color: #033d4f;
   opacity: 1;
