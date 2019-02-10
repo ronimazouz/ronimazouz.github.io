@@ -1334,8 +1334,8 @@ a {
   background-size: 100%;
   border-radius: 50%;
   outline: none;
-  border-image: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);
-  border-image-slice: 1;
+  /*border-image: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);*/
+  /*border-image-slice: 1;*/
   /*border-width: 2px;*/
 }
 
