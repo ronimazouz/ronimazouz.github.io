@@ -36,17 +36,17 @@ $("button").click(function(){
 })
 
 
-var image =  document.getElementById("expand");
-function changeimg() {
-    if (image.getAttribute('src') == "minimize.png")
-    {
-        image.src = "maximize.png";
-    }
-    else
-    {
-        image.src = "minimize.png";
-    }
-}
+//var image =  document.getElementById("expand");
+//function changeimg() {
+    //if (image.getAttribute('src') == "minimize.png")
+    //{
+        //image.src = "maximize.png";
+    //}
+    //else
+    //{
+        //image.src = "minimize.png";
+    //}
+//}
 
 function showDiv(){
     document.getElementById('div-show-accueil').setAttribute('style', 'display:block');
