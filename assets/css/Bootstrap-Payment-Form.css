@@ -83,3 +83,9 @@
   width: 5%;
 }
 
+.btn:not(:disabled):not(.disabled):hover {
+}
+
+.fa.fa-send {
+}
+
