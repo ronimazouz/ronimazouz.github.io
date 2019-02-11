@@ -12,7 +12,7 @@ body.overflow-hidden {
   overflow-y: auto;
   z-index: 500;
   background: #fff;
-  padding: 20px 30px;
+  padding: 20px 20px 20px 20px;
   color: #333;
   transition: 0.4s;
   -webkit-overflow-scrolling: touch;
@@ -31,6 +31,8 @@ body.side-menu-visible #side-menu {
   font-size: 25px;
   font-weight: 400;
   padding: 12px 0;
+  float: left;
+  font-size: 3vh;
 }
 
 #side-menu .nav-link:hover {

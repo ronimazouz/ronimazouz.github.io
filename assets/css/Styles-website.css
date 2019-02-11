@@ -936,6 +936,7 @@ button, input {
   box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
   position: relative;
   z-index: 1;
+  font-family: 'Lato';
 }
 
 .text-center.form-subheading {
@@ -1118,6 +1119,8 @@ button, input {
 .icon-bouton-video {
   height: 80%;
   width: 80%;
+  position: relative;
+  z-index: 20;
 }
 
 #div-video-small {
@@ -1459,5 +1462,19 @@ a {
 
 #image-arrow {
   width: 5%;
+}
+
+#menu-icon {
+  position: relative;
+  float: left;
+  font-size: 30px;
+  margin-right: 10px;
+  border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #menu-icon {
+    display: none;
+  }
 }
 
