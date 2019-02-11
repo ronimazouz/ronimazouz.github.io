@@ -462,8 +462,8 @@
 }
 
 #heading-thank-you {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
   color: white;
   padding-right: 5vw;
   padding-left: 5vw;
@@ -490,6 +490,7 @@
 #div-show-accueil {
   text-align: center;
   display: none;
+  padding-top: 5vh;
 }
 
 @media (min-width: 577px) {
@@ -1420,7 +1421,7 @@ a {
 }
 
 #Kid-name {
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
 #button-call {
