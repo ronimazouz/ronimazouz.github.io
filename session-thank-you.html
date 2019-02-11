@@ -27,26 +27,6 @@
 </head>
 
 <body>
-    <div class="row" id="row-navbar-logged-in">
-        <div class="col">
-            <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
-                <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: 'Lato';">(t)uto</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
-                    <div
-                        class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="choose-kid-name.html">Accueil</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active nav-link" href="my-account.html" style="color: #033d4f;">Mon Compte</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html" style="color: #033d4f;">{{kid-name}}</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html" style="color: #033d4f;">{{kid-name}}</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="add-kid.html">Ajouter un&nbsp;élève</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html">Déconnexion &nbsp;<i class="fa fa-power-off"></i></a></li>
-                        </ul>
-                </div>
-        </div>
-        </nav>
-    </div>
-    </div>
     <h1 class="text-center" id="Heading-tuto" style="color: rgb(255,255,255);">Tuto</h1>
     <h3 class="text-center" id="heading-thank-you">Merci!<br>Nous espérons que votre tuto s'est bien&nbsp;déroulé.</h3>
     <div id="div-rating-system"><div class="cont">
@@ -55,21 +35,21 @@
 </div>
 <div class="stars">
 <form action="">
-  <input class="star star-5" id="star-5" type="radio" name="star"/>
-  <label class="star star-5" for="star-5"></label>
-  <input class="star star-4" id="star-4" type="radio" name="star"/>
-  <label class="star star-4" for="star-4"></label>
-  <input class="star star-3" id="star-3" type="radio" name="star"/>
-  <label class="star star-3" for="star-3"></label>
-  <input class="star star-2" id="star-2" type="radio" name="star"/>
-  <label class="star star-2" for="star-2"></label>
-  <input class="star star-1" id="star-1" type="radio" name="star"/>
-  <label class="star star-1" for="star-1"></label>
+  <input class="star star-5" id="star-5" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-5" onclick="showDiv()" for="star-5"></label>
+  <input class="star star-4" id="star-4" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-4" onclick="showDiv()" for="star-4"></label>
+  <input class="star star-3" id="star-3" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-3" onclick="showDiv()" for="star-3"></label>
+  <input class="star star-2" id="star-2" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-2" onclick="showDiv()" for="star-2"></label>
+  <input class="star star-1" id="star-1" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-1" onclick="showDiv()" for="star-1"></label>
 </form>
 </div>
 </div>
     <div id="div-report-problem"><a href="#modal-report-problem" data-toggle="modal" style="font-weight: 200;">Signaler un problème avec ce tuto</a></div>
-    <div id="div-accueil"><button class="btn btn-primary shadow" onclick=location.href="choose-kid-name.html" type="button" id="bouton-accueil">Accueil</button></div>
+    <div id="div-show-accueil"><button class="btn btn-primary shadow" onclick=location.href="choose-kid-name.html" type="button" id="bouton-accueil">Accueil</button></div>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-report-problem">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -98,7 +78,6 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/BS4-BetterNav.js"></script>
-    <script src="assets/js/Contact-FormModal-Contact-Form-with-Google-Map.js"></script>
     <script src="assets/js/full-screen.js"></script>
     <script src="assets/js/Photo%20upload.js"></script>
     <script src="assets/js/Review-rating-Star-Review-Button.js"></script>

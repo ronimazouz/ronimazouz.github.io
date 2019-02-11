@@ -63,6 +63,7 @@
   height: 52px;
   float: left;
   font-size: 20px;
+  font-weight: 200;
   max-width: 250px;
   font-family: inherit;
   background-color: #517ca3;
@@ -484,6 +485,11 @@
 
 #div-accueil {
   text-align: center;
+}
+
+#div-show-accueil {
+  text-align: center;
+  display: none;
 }
 
 @media (min-width: 577px) {
@@ -1448,5 +1454,9 @@ a {
 
 .btn:not(:disabled):not(.disabled):hover {
   background-color: #244767;
+}
+
+#image-arrow {
+  width: 5%;
 }
 
