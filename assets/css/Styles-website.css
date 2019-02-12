@@ -1112,7 +1112,7 @@ button, input {
 
 .icon-bouton-video {
   height: 80%;
-  width: 80%;
+  width: 90%;
   position: relative;
   z-index: 20;
 }
@@ -1309,7 +1309,7 @@ body {
 }
 
 #bouton-record.rec {
-  border: 2px dashed transparent;
+  border: 2px solid transparent;
   border-color: red;
   animation-name: blink;
   animation-duration: .5s;
