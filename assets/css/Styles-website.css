@@ -1081,20 +1081,6 @@ button, input {
   }
 }
 
-#bouton-video {
-  background-color: transparent;
-  height: 8vh;
-  width: 8vh;
-  max-width: 55px;
-  max-height: 55px;
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  margin-left: 10px;
-  border-radius: 50%;
-}
-
 #row-video-call {
   margin: 0;
   position: relative;
@@ -1219,32 +1205,13 @@ body {
   padding-bottom: 0;
   padding-left: 0;
   margin-left: 10px;
+  margin-bottom: 5px;
   border-radius: 50%;
 }
 
 #bouton-video-expand {
   position: relative;
   -webkit-transition: -webkit-transform 1s , z-index 0s 0.25s;
-}
-
-#bouton-video-expand {
-  -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
-  -webkit-transform: rotateX(0deg);
-}
-
-#bouton-flip-cam {
-  position: relative;
-  -webkit-transition: -webkit-transform 1s , z-index 0s 0.25s;
-}
-
-#bouton-flip-cam {
-  -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
-  -webkit-transform: rotateY(0deg);
-}
-
-#bouton-flip-cam.rotator {
-  -webkit-transform: rotateY(180deg);
-  -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
@@ -1270,6 +1237,7 @@ body {
   padding-bottom: 0;
   padding-left: 0;
   margin-left: 10px;
+  margin-bottom: 5px;
   border-radius: 50%;
 }
 
@@ -1290,17 +1258,8 @@ body {
   padding-bottom: 0;
   padding-left: 0;
   margin-left: 10px;
+  margin-bottom: 5px;
   border-radius: 50%;
-}
-
-#bouton-record.rec {
-  border: 2px solid transparent;
-  border-color: red;
-  animation-name: blink;
-  animation-duration: .5s;
-  animation-timing-function: step-end;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 @keyframes blink {
@@ -1457,5 +1416,80 @@ a {
   #menu-icon {
     display: none;
   }
+}
+
+#bouton-cam-cut {
+  background-color: transparent;
+  height: 8vh;
+  width: 8vh;
+  max-width: 55px;
+  max-height: 55px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+#bouton-mic-cut {
+  background-color: transparent;
+  height: 8vh;
+  width: 8vh;
+  max-width: 55px;
+  max-height: 55px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+#bouton-cam-cut.click {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 50%;
+}
+
+#bouton-video-expand.click {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 50%;
+}
+
+#bouton-mic-cut.click {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 50%;
+}
+
+#bouton-flip-cam.click {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 50%;
+}
+
+#bouton-record.rec {
+  border: 2px solid transparent;
+  border-color: red;
+  animation-name: blink;
+  animation-duration: .5s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#bouton-flip-cam.rotator {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+}
+
+#bouton-flip-cam {
+  position: relative;
+  -webkit-transition: -webkit-transform 1s , z-index 0s 0.25s;
+}
+
+#bouton-flip-cam {
+  -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
+  -webkit-transform: rotateY(0deg);
 }
 

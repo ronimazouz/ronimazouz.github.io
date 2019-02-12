@@ -49,3 +49,5 @@ $("[data-animated-button]").on("touchend", function(e) {
 $(document).on("touchend", function(e) {
     $("[data-animated-button]").data({ status: false });
 });
+
+
