@@ -1092,7 +1092,6 @@ button, input {
   height: 80%;
   width: 90%;
   position: relative;
-  z-index: 20;
 }
 
 #div-video-small {
@@ -1197,7 +1196,6 @@ body {
   padding-bottom: 0;
   padding-left: 0;
   border-radius: 50%;
-  z-index: 20;
 }
 
 #bouton-video-expand {
@@ -1228,7 +1226,6 @@ body {
   padding-bottom: 0;
   padding-left: 0;
   border-radius: 50%;
-  z-index: 20;
 }
 
 @media (min-width: 1050px) {
@@ -1484,7 +1481,6 @@ a {
   #div-video-buttons {
     margin-left: 22.5%;
     width: 100%;
-    overflow: hidden;
   }
 }
 
@@ -1492,5 +1488,6 @@ a {
   position: relative;
   padding-left: 5px;
   max-width: 800px;
+  z-index: 5;
 }
 
