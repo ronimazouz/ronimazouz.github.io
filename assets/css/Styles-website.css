@@ -1222,16 +1222,6 @@ body {
   border-radius: 50%;
 }
 
-#bouton-video.click {
-  background-color: rgba(255,255,255,0.7);
-  border-radius: 50%;
-}
-
-#bouton-video-expand.click {
-  background-color: rgba(255,255,255,0.7);
-  border-radius: 50%;
-}
-
 #bouton-video-expand {
   position: relative;
   -webkit-transition: -webkit-transform 1s , z-index 0s 0.25s;
@@ -1240,11 +1230,6 @@ body {
 #bouton-video-expand {
   -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
   -webkit-transform: rotateX(0deg);
-}
-
-#bouton-flip-cam.click {
-  background-color: rgba(255,255,255,0.7);
-  border-radius: 50%;
 }
 
 #bouton-flip-cam {
