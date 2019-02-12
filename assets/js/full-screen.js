@@ -38,13 +38,13 @@ $("button").click(function(){
 
 var image =  document.getElementById("icon-record");
 function changeimg() {
-    if (image.getAttribute('src') == "record.png")
+    if (image.getAttribute('src') == "/assets/img/record.png")
     {
-        image.src = "camcorder.png";
+        image.src = "/assets/img/camcorder.png";
     }
     else
     {
-        image.src = "record.png";
+        image.src = "/assets/img/record.png";
     }
 }
 
