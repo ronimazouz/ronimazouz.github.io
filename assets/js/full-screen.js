@@ -48,17 +48,6 @@ function changeimg() {
     }
 }
 
-//var image2 =  document.getElementById("expand");
-//function changeimg2() {
-    //if (image2.getAttribute('src') == "/assets/img/minimize.png")
-    //{
-        //image2.src = "/assets/img/maximize.png";
-    //}
-    //else
-    //{
-        //image2.src = "/assets/img/minimize.png";
-    //}
-//}
 
 function showDiv(){
     document.getElementById('div-show-accueil').setAttribute('style', 'display:block');
