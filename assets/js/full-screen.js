@@ -48,15 +48,15 @@ function changeimg() {
     }
 }
 
-var image =  document.getElementById("expand");
+var image2 =  document.getElementById("expand");
 function changeimg2() {
-    if (image.getAttribute('src') == "/assets/img/minimize.png")
+    if (image2.getAttribute('src') == "/assets/img/minimize.png")
     {
-        image.src = "/assets/img/maximize.png";
+        image2.src = "/assets/img/maximize.png";
     }
     else
     {
-        image.src = "/assets/img/minimize.png";
+        image2.src = "/assets/img/minimize.png";
     }
 }
 
