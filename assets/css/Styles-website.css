@@ -1055,7 +1055,7 @@ button, input {
     height: 50vh;
     width: 100%;
     position: absolute;
-    z-index: 2;
+    /*z-index: 2;*/
     /*-webkit-border-bottom-right-radius: 30px !important;*/
     /*-webkit-border-bottom-left-radius: 30px !important;*/
     /*border-bottom-right-radius: 30px !important;*/
@@ -1086,14 +1086,6 @@ button, input {
   position: relative;
   z-index: 2;
   max-width: 800px;
-}
-
-#column-video-call {
-  padding-top: 1%;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  position: relative;
 }
 
 .icon-bouton-video {
@@ -1167,7 +1159,7 @@ body {
     width: 100%;
     position: absolute;
     bottom: 0;
-    z-index: 3;
+    /*z-index: 3;*/
   }
 }
 
@@ -1204,9 +1196,8 @@ body {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  margin-left: 10px;
-  margin-bottom: 5px;
   border-radius: 50%;
+  z-index: 20;
 }
 
 #bouton-video-expand {
@@ -1236,9 +1227,8 @@ body {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  margin-left: 10px;
-  margin-bottom: 5px;
   border-radius: 50%;
+  z-index: 20;
 }
 
 @media (min-width: 1050px) {
@@ -1257,9 +1247,8 @@ body {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  margin-left: 10px;
-  margin-bottom: 5px;
   border-radius: 50%;
+  z-index: 20;
 }
 
 @keyframes blink {
@@ -1428,9 +1417,8 @@ a {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  margin-left: 10px;
-  margin-bottom: 5px;
   border-radius: 50%;
+  z-index: 22;
 }
 
 #bouton-mic-cut {
@@ -1443,9 +1431,8 @@ a {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
-  margin-left: 10px;
-  margin-bottom: 5px;
   border-radius: 50%;
+  z-index: 20;
 }
 
 #bouton-cam-cut.click {
@@ -1491,5 +1478,19 @@ a {
 #bouton-flip-cam {
   -webkit-transition: -webkit-transform 1s, z-index 0s 0.25s;
   -webkit-transform: rotateY(0deg);
+}
+
+@media (min-width: 768px) {
+  #div-video-buttons {
+    margin-left: 22.5%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+#div-video-buttons {
+  position: relative;
+  padding-left: 5px;
+  max-width: 800px;
 }
 
