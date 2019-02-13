@@ -983,7 +983,7 @@ button, input {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #cc2b5e), color-stop(0.7, #123f64));
   position: fixed;
   z-index: 10;
-  background-size: 1275vh;
+  background-size: 1250vh;
 }
 
 .nav-effect * {
