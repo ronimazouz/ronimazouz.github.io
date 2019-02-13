@@ -58,6 +58,30 @@ function changeimg2() {
     }
 }
 
+var image3 =  document.getElementById("cam-cut");
+function changeimg3() {
+    if (image3.getAttribute('src') == "/assets/img/cam-off.png")
+    {
+        image3.src = "/assets/img/cam-on.png";
+    }
+    else
+    {
+        image3.src = "/assets/img/cam-off.png";
+    }
+}
+
+var image4 =  document.getElementById("mic-cut");
+function changeimg4() {
+    if (image4.getAttribute('src') == "/assets/img/mic-off.png")
+    {
+        image4.src = "/assets/img/mic-on.png";
+    }
+    else
+    {
+        image4.src = "/assets/img/mic-off.png";
+    }
+}
+
 
 function showDiv(){
     document.getElementById('div-show-accueil').setAttribute('style', 'display:block');
