@@ -7,8 +7,10 @@
     <title>Tuto</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cagliostro">
@@ -27,6 +29,24 @@
 </head>
 
 <body>
+    <div class="row" id="row-navbar-tutor-in">
+        <div class="col">
+            <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
+                <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: 'Lato';">(t)uto</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="tutor-account.html">Mon Compte</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="tutor-invoice-history.html">Historique Factures</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">A propos de</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="login-tutor.html" id="link-connexion">Deconnection<i class="fa fa-power-off" style="margin-left: 5px;"></i></a></li>
+                        </ul>
+                </div>
+        </div>
+        </nav>
+    </div>
+    </div>
     <h1 class="text-center page-title">Historique de vos factures</h1>
     <div id="div-scroll">
         <div id="div-histo-payments" class="div-histo div-list" style="background-color: rgba(0,0,0,0.5);height: 100px;">

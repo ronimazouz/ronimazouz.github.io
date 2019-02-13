@@ -256,7 +256,7 @@
 
 @media (min-width: 768px) {
   #heading-choose-subject-1 {
-    width: 60%;
+    width: 55%;
     float: right;
     margin-right: 10px;
     position: relative;
@@ -943,23 +943,47 @@ button, input {
 @media (min-width: 768px) {
   .figure.snip1573 {
     border-radius: 15px;
+    border: 2px solid rgb(255,255,255);
   }
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #033d4f;
-  font-size: 16px;
-  font-weight: 200;
+@media (min-width: 768px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 200;
+  }
 }
 
-#row-navbar-logged-in {
+@media (max-width: 767px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: #033d4f;
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+
+#row-navbar-logged-out {
+  margin: 0 0 0 0;
+}
+
+#row-navbar-tutor-out {
+  margin: 0 0 0 0;
+}
+
+#row-navbar-tutor-in {
+  margin: 0 0 0 0;
+}
+
+#row-navbar {
   margin: 0 0 0 0;
 }
 
 .navbar.navbar-light.navbar-expand-md.fixed-top.navbar-logged-in {
-  background-color: #ea3375;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #cc2b5e), color-stop(0.7, #123f64));
   position: fixed;
-  z-index: 2;
+  z-index: 10;
+  background-size: 1275vh;
 }
 
 .nav-effect * {
@@ -972,7 +996,7 @@ button, input {
 .nav-effect li {
   display: inline-block;
   list-style: outside none none;
-  margin: 0 1em;
+  margin: 0 0.2em;
   padding: 0;
 }
 
@@ -1021,6 +1045,7 @@ button, input {
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
   opacity: 1;
+  border-radius: 2px;
 }
 
 @media (min-width: 768px) {
@@ -1134,7 +1159,7 @@ button, input {
 
 body {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #ea3375), color-stop(0.7, #123f64));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #cc2b5e), color-stop(0.7, #123f64));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1493,5 +1518,32 @@ a {
   padding-left: 5px;
   max-width: 800px;
   z-index: 5;
+}
+
+@media (min-width: 768px) {
+  #link-connexion {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    color: white;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  #menu-icon-on {
+    position: relative;
+    float: left;
+    font-size: 30px;
+    margin-right: 10px;
+    border-bottom: 0;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 5px;
 }
 

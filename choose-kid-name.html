@@ -7,8 +7,10 @@
     <title>Tuto</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cagliostro">
@@ -27,7 +29,7 @@
 </head>
 
 <body style="height: 100%;width: 100%;">
-    <div class="row" id="row-navbar-logged-in">
+    <div class="row" id="row-navbar">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
                 <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: 'Lato';">(t)uto</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
@@ -35,12 +37,12 @@
                         class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
                             <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose-kid-name.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active nav-link" href="my-account.html" style="color: #033d4f;">Mon Compte<i class="fa fa-user" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html" style="color: #033d4f;">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html" style="color: #033d4f;">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="my-account.html">Mon Compte<i class="fa fa-user" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="add-kid.html">Ajouter un&nbsp;élève<i class="fa fa-user-plus" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="link-connexion">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                         </ul>
                 </div>
         </div>

@@ -7,8 +7,10 @@
     <title>Tuto</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cagliostro">
@@ -27,6 +29,25 @@
 </head>
 
 <body>
+    <div class="row" id="row-navbar-logged-out">
+        <div class="col">
+            <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
+                <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: 'Lato';">(t)uto</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
+                            <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="index.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Comment ça marche?<i class="material-icons" id="menu-icon">info</i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">S'inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="link-connexion">Connexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
+                        </ul>
+                </div>
+        </div>
+        </nav>
+    </div>
+    </div>
     <form method="post" class="register-form">
         <h2 class="text-center">Créer&nbsp;un compte</h2>
         <div class="form-group"><input class="form-control" type="email" name="email" required="" placeholder="Email" style="background-color: rgba(255,255,255,0);"></div>
