@@ -863,9 +863,8 @@ textarea {
 
 .text-center.page-title {
   color: rgb(255,255,255);
-  height: auto;
   width: 100%;
-  margin-top: 100px;
+  padding-top: 120px;
   font-family: Lato, sans-serif;
   font-weight: 300;
   margin-bottom: 40px;
