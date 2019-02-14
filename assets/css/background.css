@@ -163,3 +163,9 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  #body-choose {
+    height: 100vh;
+  }
+}
+
