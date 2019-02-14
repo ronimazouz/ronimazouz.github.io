@@ -156,3 +156,10 @@ body {
   height: 50px;
 }
 
+@media (min-width: 768px) {
+  #img-anim {
+    width: 80px;
+    height: 80px;
+  }
+}
+
