@@ -979,13 +979,6 @@ button, input {
   margin: 0 0 0 0;
 }
 
-.navbar.navbar-light.navbar-expand-md.fixed-top.navbar-logged-in {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #cc2b5e), color-stop(0.7, #123f64));
-  position: fixed;
-  z-index: 10;
-  background-size: 1250vh;
-}
-
 .nav-effect * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1155,15 +1148,6 @@ button, input {
   padding-bottom: 0;
   padding-left: 0;
   margin-top: 10px;
-}
-
-body {
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #cc2b5e), color-stop(0.7, #123f64));
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 #link-kid-name {
