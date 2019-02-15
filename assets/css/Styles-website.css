@@ -1185,7 +1185,7 @@ button, input {
     width: 100%;
     position: absolute;
     bottom: 0;
-    /*z-index: 3;*/
+    z-index: 3;
   }
 }
 
