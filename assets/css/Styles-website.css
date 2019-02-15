@@ -1095,11 +1095,6 @@ button, input {
     height: 50vh;
     width: 100%;
     position: absolute;
-    /*z-index: 2;*/
-    /*-webkit-border-bottom-right-radius: 30px !important;*/
-    /*-webkit-border-bottom-left-radius: 30px !important;*/
-    /*border-bottom-right-radius: 30px !important;*/
-    /*border-bottom-left-radius: 30px !important;*/
     overflow: hidden;
   }
 }
