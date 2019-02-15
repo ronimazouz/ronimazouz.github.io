@@ -1262,7 +1262,7 @@ button, input {
 }
 
 #bouton-record {
-  background-color: transparent;
+  background-color: rgba(255,255,255,0.7);
   height: 8vh;
   width: 8vh;
   max-width: 55px;
@@ -1461,22 +1461,22 @@ a {
   z-index: 20;
 }
 
-#bouton-cam-cut.click {
+#bouton-cam-cut {
   background-color: rgba(255,255,255,0.7);
   border-radius: 50%;
 }
 
-#bouton-video-expand.click {
+#bouton-video-expand {
   background-color: rgba(255,255,255,0.7);
   border-radius: 50%;
 }
 
-#bouton-mic-cut.click {
+#bouton-mic-cut {
   background-color: rgba(255,255,255,0.7);
   border-radius: 50%;
 }
 
-#bouton-flip-cam.click {
+#bouton-flip-cam {
   background-color: rgba(255,255,255,0.7);
   border-radius: 50%;
 }
