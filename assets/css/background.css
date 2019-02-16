@@ -38,7 +38,6 @@ body {
   height: 100%;
   position: fixed;
   bottom: 0;
-  z-index: -1;
 }
 
 .circles {
@@ -75,7 +74,7 @@ body {
   width: 20px;
   height: 20px;
   animation-delay: 2s;
-  animation-duration: 12s;
+  animation-duration: 7s;
 }
 
 .circles li:nth-child(3) {
@@ -90,7 +89,7 @@ body {
   width: 60px;
   height: 60px;
   animation-delay: 0s;
-  animation-duration: 18s;
+  animation-duration: 12s;
 }
 
 .circles li:nth-child(5) {
@@ -119,7 +118,7 @@ body {
   width: 25px;
   height: 25px;
   animation-delay: 15s;
-  animation-duration: 15s;
+  animation-duration: 8s;
 }
 
 .circles li:nth-child(9) {
@@ -127,7 +126,7 @@ body {
   width: 15px;
   height: 15px;
   animation-delay: 2s;
-  animation-duration: 15s;
+  animation-duration: 8s;
 }
 
 .circles li:nth-child(10) {
