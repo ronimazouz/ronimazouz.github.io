@@ -31,21 +31,30 @@
     <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
 </head>
 
-<body id="body-choose">
-    <div id="div-margin"></div>
-    <div id="div-video-big" style="text-align: center;border: none;"><img src="assets/img/ezgif.com-crop.gif" style="height: 100%;width: inherit;">
-        <div id="video-call-bottom">
-            <div id="div-call-button"><a class="btn btn-primary" role="button" href="session-thank-you.html" id="bouton-call" style="line-height: 65px;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #e53935), color-stop(1, #e35d5b));"><img src="assets/img/phone.png" style="width: 70%;"></a></div>
-            <div
-                id="div-video-small"><img src="assets/img/student.jpg" style="width: 100%;height: 100%;"></div>
-    </div>
-    </div>
-    <div id="div-video-buttons" style="padding-top: 10px;"><button class="btn btn-primary" type="button" onclick="fullscreen() ; changeimg2()" id="bouton-video-expand"><img src="assets/img/maximize.png"; class= icon-bouton-video id="expand"/></button><span id="span-alert">Il vous reste {{mins}} sur votre forfait</span></div>
-    <div id="div-video-buttons"><button class="btn btn-primary" type="button" id="bouton-flip-cam"><img src="assets/img/flip-camera.png" class="icon-bouton-video"></button></div>
-    <div id="div-video-buttons"><button class="btn btn-primary" type="button" id="bouton-record" onclick="changeimg()"><img src="assets/img/camcorder.png" id="icon-record" class="icon-bouton-video" /></button></div>
-    <div id="div-video-buttons"><button class="btn btn-primary" type="button" onclick="changeimg3()" id="bouton-cam-cut"><img src="assets/img/cam-on.png" id="cam-cut" class="icon-bouton-video" /></button></div>
-    <div id="div-video-buttons"><button class="btn btn-primary" type="button" onclick="changeimg4()" id="bouton-mic-cut"><img src="assets/img/mic-on.png" id="mic-cut" class="icon-bouton-video"/></button></div>
-    <div id="div-messenger"><img src="assets/img/messenger.jpg" style="width: 100%;height: 100%;"></div>
+<body>
+    <h2 class="text-center" style="margin: 10px 0 10px 0;">Bienvenue sur Tuto!</h2>
+    <h5 class="text-center" style="margin-bottom: 10px;">Comment ca fonctionne:</h5>
+    <form class="register-form" style="margin-top: 0px;text-align: center;max-width: 400px;margin-bottom: 50px;padding: 20px;">
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="height: 50vh;"><img class="w-100 d-block" src="assets/img/tuto1.png" alt="Slide Image">
+                    <h5 class="text-center" id="heading-carousel">1. Je choisis qui a besoin d'aide avec ses devoirs</h5>
+                </div>
+                <div class="carousel-item">
+                    <h5 class="text-center" id="heading-carousel" style="top: 20%;">2. Je choisis dans quelle matière&nbsp;</h5><img class="w-100 d-block" src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
+                <div class="carousel-item">
+                    <h5 class="text-center" id="heading-carousel">3. Je suis mis en relation par video avec un tuteur qui va m'aider!</h5><img class="w-100 d-block" src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev" style="padding-right: 20px;"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1"
+                    role="button" data-slide="next" style="padding-left: 20px;"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </form>
+    <div style="text-align: center;"><button class="btn btn-primary" type="button" id="bouton-accueil">Commencer</button></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/BS4-BetterNav.js"></script>

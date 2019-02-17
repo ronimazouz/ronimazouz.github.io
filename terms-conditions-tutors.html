@@ -31,21 +31,11 @@
     <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
 </head>
 
-<body id="body-choose">
-    <div id="div-margin"></div>
-    <div id="div-video-big" style="text-align: center;border: none;"><img src="assets/img/ezgif.com-crop.gif" style="height: 100%;width: inherit;">
-        <div id="video-call-bottom">
-            <div id="div-call-button"><a class="btn btn-primary" role="button" href="session-thank-you.html" id="bouton-call" style="line-height: 65px;background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #e53935), color-stop(1, #e35d5b));"><img src="assets/img/phone.png" style="width: 70%;"></a></div>
-            <div
-                id="div-video-small"><img src="assets/img/student.jpg" style="width: 100%;height: 100%;"></div>
-    </div>
-    </div>
-    <div id="div-video-buttons" style="padding-top: 10px;"><button class="btn btn-primary" type="button" onclick="fullscreen() ; changeimg2()" id="bouton-video-expand"><img src="assets/img/maximize.png"; class= icon-bouton-video id="expand"/></button><span id="span-alert">Il vous reste {{mins}} sur votre forfait</span></div>
-    <div id="div-video-buttons"><button class="btn btn-primary" type="button" id="bouton-flip-cam"><img src="assets/img/flip-camera.png" class="icon-bouton-video"></button></div>
-    <div id="div-video-buttons"><button class="btn btn-primary" type="button" id="bouton-record" onclick="changeimg()"><img src="assets/img/camcorder.png" id="icon-record" class="icon-bouton-video" /></button></div>
-    <div id="div-video-buttons"><button class="btn btn-primary" type="button" onclick="changeimg3()" id="bouton-cam-cut"><img src="assets/img/cam-on.png" id="cam-cut" class="icon-bouton-video" /></button></div>
-    <div id="div-video-buttons"><button class="btn btn-primary" type="button" onclick="changeimg4()" id="bouton-mic-cut"><img src="assets/img/mic-on.png" id="mic-cut" class="icon-bouton-video"/></button></div>
-    <div id="div-messenger"><img src="assets/img/messenger.jpg" style="width: 100%;height: 100%;"></div>
+<body>
+    <form>
+        <h4 style="color: rgb(255,255,255);">Termes et Conditions:</h4>
+        <p>{{terms-and-conditions-tutors}}</p>
+    </form>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/BS4-BetterNav.js"></script>

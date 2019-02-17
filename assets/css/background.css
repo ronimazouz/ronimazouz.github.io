@@ -168,3 +168,26 @@ body {
   }
 }
 
+.w-100.d-block {
+  width: 80%!important;
+  margin: auto;
+}
+
+#heading-carousel {
+  position: absolute;
+  font-family: 'Gloria Hallelujah', cursive;
+  width: 70%;
+  position: absolute;
+  margin: 0;
+  color: white;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+  .footer-clean {
+    display: none;
+  }
+}
+
