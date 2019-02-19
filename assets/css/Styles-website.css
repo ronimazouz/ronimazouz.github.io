@@ -602,6 +602,7 @@ link {
 #div-kid-name {
   display: flex;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 849px) {
@@ -1550,5 +1551,6 @@ a {
   position: relative;
   float: right;
   margin-right: 5px;
+  display: none;
 }
 
