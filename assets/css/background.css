@@ -171,17 +171,18 @@ body {
 .w-100.d-block {
   width: 80%!important;
   margin: auto;
+  margin-top: 100px;
 }
 
 #heading-carousel {
   position: absolute;
   font-family: 'Gloria Hallelujah', cursive;
-  width: 70%;
+  width: 90%;
   position: absolute;
   margin: 0;
   color: white;
   left: 50%;
-  top: 15%;
+  top: 2.5em;
   transform: translate(-50%, -50%);
 }
 
