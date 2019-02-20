@@ -182,12 +182,18 @@ body {
   margin: 0;
   color: white;
   left: 50%;
-  top: 2.5em;
+  top: 2.2em;
   transform: translate(-50%, -50%);
 }
 
 @media (max-width: 767px) {
   .footer-clean {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .contr {
     display: none;
   }
 }
