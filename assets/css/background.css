@@ -198,3 +198,13 @@ body {
   }
 }
 
+.navbar.navbar-light.navbar-expand-md.fixed-top.navbar-logged-in.navbar-overlay {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  font-family: 'Lato';
+  width: 70px;
+}
+

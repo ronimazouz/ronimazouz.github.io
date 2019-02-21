@@ -341,6 +341,7 @@
   background-size: cover;
   background-attachment: fixed;
   overflow: visible;
+  background-color: rgba(0,0,0,0.7);
 }
 
 #body-choose-subject {
@@ -765,6 +766,12 @@ link {
 
 .modal-header {
   border-bottom: none;
+  background: linear-gradient(-45deg, #EE7752, #cc2b5e, #123f64, #23D5AB);
+  background-size: 500% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  border-radius: 0px;
 }
 
 #form-signal-problem {
