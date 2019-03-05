@@ -208,3 +208,16 @@ body {
   width: 70px;
 }
 
+@media (min-width: 768px) {
+  #icon-back {
+    display: none;
+  }
+}
+
+#link-back {
+  position: sticky;
+  z-index: 100;
+  top: 30%;
+  float: left;
+}
+
