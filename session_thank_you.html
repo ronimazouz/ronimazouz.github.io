@@ -34,35 +34,42 @@
 </head>
 
 <body>
-    <div class="row" id="row-navbar">
-        <div class="col">
-            <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
-                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)" style="font-family: 'Lato';width: 70px;"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;display: none;"></i><img src="assets/img/A+.png" style="width: 100%;margin-left: 20px;"></a>
-                    <button
-                        class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
-                        <div class="collapse navbar-collapse" id="navcol-1">
-                            <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
-                                <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="index.html" id="link-accueil">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="index2.html#div-comment" id="link-comment">Comment ça marche?<i class="material-icons" id="menu-icon">info</i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#div-forfaits">Les Forfaits<i class="fa fa-star" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="register.html">S'inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="about_us.html">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-login" id="link-connexion" data-toggle="modal">Connexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
-                            </ul>
-                        </div>
-                </div>
-            </nav>
+    <h1 class="text-center" id="Heading-tuto" style="color: rgb(255,255,255);">Tuto</h1>
+    <h3 class="text-center" id="heading-thank-you">Merci!<br>Votre cours a &nbsp;duré {{mins}}.<br>Nous espérons qu'il s'est bien&nbsp;déroulé.</h3>
+    <div id="div-rating-system"><div class="cont">
+<div class="title">
+  <h4>Notez votre Tuteur</h4>
+</div>
+<div class="stars">
+<form action="">
+  <input class="star star-5" id="star-5" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-5" onclick="showDiv()" for="star-5"></label>
+  <input class="star star-4" id="star-4" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-4" onclick="showDiv()" for="star-4"></label>
+  <input class="star star-3" id="star-3" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-3" onclick="showDiv()" for="star-3"></label>
+  <input class="star star-2" id="star-2" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-2" onclick="showDiv()" for="star-2"></label>
+  <input class="star star-1" id="star-1" type="radio" onclick="showDiv()" name="star"/>
+  <label class="star star-1" onclick="showDiv()" for="star-1"></label>
+</form>
+</div>
+</div>
+    <div id="div-report-problem"><a href="#modal-report-problem" data-toggle="modal" style="font-weight: 200;font-size: 16px;">Signaler un problème avec ce tuto</a></div>
+    <div id="div-show-accueil"><button class="btn btn-primary shadow" onclick=location.href="choose-kid-name.html" type="button" id="bouton-accueil">Valider</button></div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-report-problem">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(10,65,88);">Signaler un problème</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body"><input type="text" placeholder="Nom" style="width: 100%;margin-bottom: 15px;"><input type="text" placeholder="Prénom" style="width: 100%;margin-bottom: 15px;"><input type="email" placeholder="Email" style="width: 100%;margin-bottom: 60px;">
+                    <label
+                        style="color: rgb(10,65,88);">Sujet: &nbsp;</label><span style="color: rgb(10,65,88);border-bottom: solid 1px rgb(10,65,88);">Problème avec le tuto du {tuto-date, avec {tutor-first-name}</span><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
+                <div
+                    class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal" style="color: white;">Fermer</button><button class="btn btn-primary" type="button" id="bouton-envoyer">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
         </div>
     </div>
-    <form method="post" class="register-form" style="text-align: center;">
-        <h2 class="sr-only">Login Form</h2>
-        <h2 class="text-center" style="padding-bottom: 60px;">Accéder&nbsp;à mon compte<br></h2>
-        <div class="form-group" style="font-size: 35px;"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Mot de passe"></div><button class="btn btn-primary btn-block shadow-lg" type="submit" style="height: 60px;padding-bottom: 11px;margin-top: 55px;box-shadow: 20px 38px 34px -26px;background-color: #517ca3;font-size: 20px;margin-bottom: 10px;-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);">Connexion</button>
-        <a
-            href="#" id="forgot" class="forgot" style="color: rgb(255,255,255);font-size: 15px;">Email ou mot de passe oublié?</a>
-    </form>
+    </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

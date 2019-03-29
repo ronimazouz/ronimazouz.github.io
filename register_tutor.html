@@ -34,33 +34,36 @@
 </head>
 
 <body>
-    <div class="row" id="row-navbar">
+    <div class="row" id="row-navbar-tutor-out">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
-                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)" style="font-family: 'Lato';width: 70px;"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;display: none;"></i><img src="assets/img/A+.png" style="width: 100%;margin-left: 20px;"></a>
+                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)" style="font-family: 'Lato';"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img src="assets/img/A+.png" style="width: 100%;margin-left: 30px;"></a>
                     <button
                         class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
-                                <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="index.html" id="link-accueil">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="index2.html#div-comment" id="link-comment">Comment ça marche?<i class="material-icons" id="menu-icon">info</i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#div-forfaits">Les Forfaits<i class="fa fa-star" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="register.html">S'inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="about_us.html">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
+                                <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="index.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Comment ça marche?<i class="material-icons" id="menu-icon">info</i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#">S'inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
                                 <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-login" id="link-connexion" data-toggle="modal">Connexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="link-connexion">Connexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                             </ul>
                         </div>
                 </div>
             </nav>
         </div>
+    </div><form method="post" class="register-form">
+    <h2 class="text-center">Créer un compte</h2>
+    <div class="form-group"><input class="form-control" type="email" name="email" required placeholder="Email" style="background-color: rgba(255,255,255,0);" /></div>
+    <div class="form-group"><input class="form-control" type="password" name="password" required placeholder="Mot de passe" style="background-color: rgba(255,255,255,0);" /></div>
+    <div class="form-group"><input class="form-control" type="password" name="password-repeat" required placeholder="Confirmer mot de passe" style="background-color: rgba(247,249,252,0);color: white;" /></div>
+    <div class="form-group">
+        <div class="form-check"><input class="form-check-input" type="checkbox" name="checkbox" value="check" id="formCheck-1" /><label class="form-check-label" for="formCheck-1" style="font-size: 16px;">J&#39;accepte <a href="terms-conditions-tutors.html" style="font-size: 16px;color: #517ca3;">les termes et conditions.</a></label></div>
     </div>
-    <form method="post" class="register-form" style="text-align: center;">
-        <h2 class="text-center" style="padding-bottom: 30px;">Email ou Mot de Passe Oublié<br></h2>
-        <p class="text-center" id="paragraph-Subscription-Confirmation" style="font-size: 16px;margin-bottom: 30px;">Veuillez fournir votre adresse mail</p>
-        <div class="form-group" style="font-size: 35px;"><input class="form-control" type="email" name="email" placeholder="Email"></div><button class="btn btn-primary btn-block shadow-lg" type="submit" style="height: 60px;padding-bottom: 11px;margin-top: 55px;box-shadow: 20px 38px 34px -26px;background-color: #517ca3;font-size: 20px;margin-bottom: 10px;-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);">Réinitialiser</button></form>
-    <div
-        class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
+    <div class="form-group f-group" id="form-group-inscrire-already"><button class="btn btn-primary btn-block" type="submit" onclick="if(!this.form.checkbox.checked){alert('Vous devez accepter les Termes et  Conditions.');return false}" id="bouton-inscrire">S&#39;inscrire</button><a class="text-center already" href="login.html" id="link-already" style="color: rgb(255,255,255);font-size: 16px;">Vous avez deja un compte?  Connectez-vous</a></div>
+</form>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -71,14 +74,14 @@
                 <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal" style="color: white;">Fermer</button><button class="btn btn-primary" type="button" id="bouton-envoyer">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
             </div>
         </div>
-        </div>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/BS4-BetterNav.js"></script>
-        <script src="assets/js/full-screen.js"></script>
-        <script src="assets/js/Photo%20upload.js"></script>
-        <script src="assets/js/Review-rating-Star-Review-Button.js"></script>
-        <script src="assets/js/scripts.js"></script>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/BS4-BetterNav.js"></script>
+    <script src="assets/js/full-screen.js"></script>
+    <script src="assets/js/Photo%20upload.js"></script>
+    <script src="assets/js/Review-rating-Star-Review-Button.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
