@@ -106,45 +106,10 @@
   text-align: center;
 }
 
-#choose-subject-2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 20px;
-  background-image: url(histoire-big.jpg);
-}
-
 @media (max-width: 576px) {
   #choose-subject-1 {
     background: rgba(0,0,0,0.3) !important;
     border-radius: 0px;
-  }
-}
-
-@media (max-width: 576px) {
-  #choose-subject-2 {
-    background: transparent !important;
-  }
-}
-
-@media (min-width: 576px) {
-  #div-choose-subject-2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background-image: url(francais-big.jpg);
-    border-radius: 20px;
-    max-width: 70%;
-  }
-}
-
-@media (max-width: 576px) {
-  #div-choose-subject-2 {
-    max-width: 100%;
-    border-radius: 0px;
-    background: rgba(0,0,0,0.4) !important;
   }
 }
 
@@ -162,11 +127,6 @@
     border-right: 0px;
     border-bottom: 0px;
   }
-}
-
-#column-choose-subject-2 {
-  display: flex;
-  justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -187,12 +147,6 @@
   }
 }
 
-@media (max-width: 576px) {
-  #column-choose-subject-2 {
-    border-bottom: white solid 1px;
-  }
-}
-
 @media (min-width: 768px) {
   #image-choose-subject-1 {
     padding-top: 5px;
@@ -207,12 +161,6 @@
   }
 }
 
-@media (min-width: 577px) {
-  #image-choose-subject-2 {
-    display: none;
-  }
-}
-
 @media (max-width: 767px) {
   #image-choose-subject-1 {
     padding-top: 5px;
@@ -220,20 +168,6 @@
     max-height: 70px;
     max-width: 70px;
     margin-left: 3vw;
-    position: relative;
-    top: 50%;
-    transform: translate(0%, -50%);
-  }
-}
-
-@media (max-width: 576px) {
-  #image-choose-subject-2 {
-    width: 25vw;
-    height: 25vw;
-    border-radius: 50%;
-    max-height: 100px;
-    max-width: 100px;
-    margin-left: 2.5vw;
     position: relative;
     top: 50%;
     transform: translate(0%, -50%);
@@ -766,12 +700,6 @@ link {
 
 .modal-header {
   border-bottom: none;
-  background: linear-gradient(-45deg, #EE7752, #cc2b5e, #123f64, #23D5AB);
-  background-size: 500% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-  border-radius: 0px;
 }
 
 #form-signal-problem {
@@ -1561,6 +1489,6 @@ a {
   position: relative;
   float: right;
   margin-right: 5px;
-  display: none;
+  /*display: none;*/
 }
 

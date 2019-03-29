@@ -18,12 +18,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
     <link rel="stylesheet" href="assets/css/background.css">
     <link rel="stylesheet" href="assets/css/BS4-BetterNav.css">
     <link rel="stylesheet" href="assets/css/checkbox.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean-1.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-Payment-Form.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Hover.css">
     <link rel="stylesheet" href="assets/css/Photo%20upload.css">
     <link rel="stylesheet" href="assets/css/Style-rating-system.css">
@@ -41,9 +44,8 @@
                         <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
                             <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose-kid-name.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="my-account.html">Mon Compte<i class="fa fa-user" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html">Pierre<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html">Paul<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html">Jacques<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid-account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="add-kid.html">Ajouter un&nbsp;élève<i class="fa fa-user-plus" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="link-connexion">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
@@ -54,12 +56,12 @@
         </div>
     </div>
     <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: 0px;padding: 0;margin-top: 100px;">Votre compte Tuto</h1><a href="edit-register-parent.html" style="font-family: Lato, sans-serif;font-size: 16px;">Editer</a>
-    <h5 class="text-center" style="color: rgb(255,255,255);font-weight: 200;font-family: 'Lato';margin-top: 30px;">Total consommation ce mois-ci:<br></h5><span id="text-spent-mins">23&nbsp;</span><span style="font-size: 20px;font-weight: 200;font-family: 'Lato';">minutes&nbsp;</span>
+    <h5 class="text-center" style="color: rgb(255,255,255);font-weight: 200;font-family: 'Lato';margin-top: 30px;">Total consommation ce mois-ci:<br></h5><span id="text-spent-mins">{{23}}&nbsp;</span><span style="font-size: 20px;font-weight: 200;font-family: 'Lato';">minutes&nbsp;</span>
     <h5 class="text-center" style="color: rgb(255,255,255);font-weight: 200;margin-top: 15px;font-family: 'Lato';">Il vous reste:</h5>
     <div style="margin-bottom: 3vh;"><span id="left-mins" style="font-size: 20px;font-family: 'Lato';">13</span><span style="font-size: 20px;font-family: 'Lato';">&nbsp;minutes sur votre forfait</span></div>
-    <div id="div-kid-name"><a href="kid-account.html" id="link-kid-name" class="link">Pierre</a></div>
-    <div id="div-kid-name"><a href="kid-account.html" id="link-kid-name" class="link">Paul</a></div>
-    <div id="div-kid-name"><a href="kid-account.html" id="link-kid-name" class="link">Jacques</a></div><button class="btn btn-primary shadow" onclick=location.href="payment-page.html" type="button" id="bouton-ajouter-mins">Ajouter des minutes</button>
+    <div id="div-kid-name"><a href="kid-account.html" id="link-kid-name" class="link">{kid-name}</a></div>
+    <div id="div-kid-name"><a href="kid-account.html" id="link-kid-name" class="link">{kid-name}</a></div>
+    <div id="div-kid-name"><a href="kid-account.html" id="link-kid-name" class="link">{kid-name}</a></div><button class="btn btn-primary shadow" onclick=location.href="payment-page.html" type="button" id="bouton-ajouter-mins">Ajouter des minutes</button>
     <div id="div-accueil"><button class="btn btn-primary shadow" onclick=location.href="choose-kid-name.html" type="button" id="bouton-accueil">Accueil</button></div>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
