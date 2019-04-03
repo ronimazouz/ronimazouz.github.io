@@ -1492,3 +1492,15 @@ a {
   /*display: none;*/
 }
 
+#heading-carousel {
+  position: absolute;
+  font-family: 'Gloria Hallelujah', cursive;
+  width: 90%;
+  position: absolute;
+  margin: 0;
+  color: white;
+  left: 50%;
+  top: 2.2em;
+  transform: translate(-50%, -50%);
+}
+
