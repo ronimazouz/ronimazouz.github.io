@@ -1489,7 +1489,7 @@ a {
   position: relative;
   float: right;
   margin-right: 5px;
-  /*display: none;*/
+  display: none;
 }
 
 #heading-carousel {
