@@ -33,41 +33,47 @@
 </head>
 
 <body>
-    <div class="row" id="row-navbar-tutor-in">
+    <div class="row" id="row-navbar-tutor-out">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
-                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)" style="font-family: 'Lato';"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img src="assets/img/A+.png" style="width: 100%;margin-left: 20px;"></a>
+                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)" style="font-family: 'Lato';"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img src="assets/img/A+.png" style="width: 100%;margin-left: 30px;"></a>
                     <button
                         class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="tutor-account.html">Mon Compte<i class="fa fa-user" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="tutor-invoice-history.html">Historique Factures<i class="fa fa-list" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fas fa-envelope" id="menu-icon"></i></a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="login-tutor.html" id="link-connexion">Deconnection<i class="fa fa-power-off" id="menu-icon-on" style="margin-left: 5px;"></i></a></li>
+                                <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="index.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Comment ça marche?<i class="material-icons" id="menu-icon">info</i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#">S'inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="link-connexion">Connexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                             </ul>
                         </div>
                 </div>
             </nav>
         </div>
     </div>
-    <div id="div-availability" class="div-2elements" style="height: 40px;margin-top: 15vh;">
-        <h3 class="text-left" id="heading-availability" style="color: rgb(255,255,255);width: 70%;float: left;">Disponible:</h3><label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label></div>
-    <h2 class="text-center page-title" style="padding-top: 30px;margin-bottom: 0px;">Votre Compte</h2>
-    <div style="text-align: center;"><a href="edit_tutor_info_1.html" style="font-size: 16px;">Editer vos Informations</a></div>
-    <h5 class="text-center" style="color: rgb(255,255,255);margin-bottom: 0px;margin-left: 10vw;margin-right: 10vw;margin-top: 30px;">Vous avez donné {minutes} minutes ({minutes/60 &nbsp;heures) de cours ce mois-ci pour un total de:</h5>
-    <h5 class="text-center" style="color: rgb(255,255,255);margin-bottom: 30px;">{Euros €}</h5>
-    <div style="text-align: center;margin-bottom: 30px;font-size: 20px;"><a href="tutor-invoice-history.html" class="link" style="color: white;">Historique de vos factures</a></div>
-    <h3 class="text-center" id="heading-histo-tutos" style="color: rgb(255,255,255);margin-bottom: 0px;padding-bottom: 10px;">Historique de vos Tutos:</h3>
-    <div id="div-scroll">
-        <div id="div-histo-tutos" class="div-list div-histo" style="background-color: rgba(0,0,0,0.5);height: 100px;text-align: center;">
-            <h1 id="heading-tutos-details-tutor" style="color: rgb(255,255,255);">{kid-first-name-{date}-{matiere}-{tuto-mins} minutes</h1>
-        </div>
-    </div>
+    <form class="register-form">
+        <h2 class="text-center form-heading">Editer vos Informations<br>(3/3)<br></h2>
+        <h2 class="text-center form-subheading">Votre Entreprise<br></h2><label class="form-label">Nom de votre Entreprise</label><input class="form-control form-input" type="text" inputmode="latin-name"><label class="form-label">Forme Juridique</label><select class="form-control form-input"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select>
+        <label
+            class="form-label">Adresse de l'Entreprise</label><input class="form-control form-input" type="text"><label class="form-label">Code Postal</label><input class="form-control form-input" type="text" inputmode="numeric"><label class="form-label">Ville</label>
+            <input
+                class="form-control form-input" type="text" inputmode="latin-name"><label class="form-label"></label><input class="form-control form-input" type="tel">
+                <div id="button-suivant" style="text-align: center;margin-top: 40px;"><button class="btn btn-primary" type="button" id="bouton-suivant">Soumettre</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modal-thank-you">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="color: rgb(10,65,88);">Confirmation d'Inscription</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                            <div class="modal-body" style="color: rgb(10,65,88);">
+                                <p>Merci!<br>Nous allons revoir vos informations et vous contacterons dans les plus brefs délais.</p>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-primary" type="button">Accueil</button></div>
+                        </div>
+                    </div>
+                </div>
+    </form>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
