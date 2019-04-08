@@ -793,7 +793,7 @@ textarea {
 }
 
 .link:hover {
-  color: #ffffff !important;
+  color: #0075c1 !important;
 }
 
 #header-welcome .close {
@@ -1508,5 +1508,9 @@ a {
   left: 50%;
   top: 2.2em;
   transform: translate(-50%, -50%);
+}
+
+#logo {
+  width: 300%;
 }
 
