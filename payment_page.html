@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cagliostro">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantarell">
@@ -36,17 +37,17 @@
     <div class="row" id="row-navbar">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
-                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img src="assets/img/A+.png" id="logo"></a><button class="navbar-toggler" data-toggle="collapse"
+                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img id="logo" src="assets/img/logo.png"></a><button data-toggle="collapse" class="navbar-toggler"
                         data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
+                    <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 100px;">
                         <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
                             <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose_kid_name.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="my_account.html">Mon Compte<i class="fa fa-user" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="add_kid.html">Ajouter un&nbsp;élève<i class="fa fa-user-plus" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="link-connexion">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" href="#modal-contact-us">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="login.html">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 column-payment" id="column-payment-info">
             <div class="card shadow-lg credit-card-box">
                 <div class="card-header">
-                    <h3 class="text-center" style="color: rgb(255,255,255);font-size: 25px;">Vos Informations de Paiement</h3><img src="assets/img/Accepted%20cards.png" id="image-cards">
+                    <h3 class="text-center" style="color: rgb(255,255,255);font-size: 25px;">Vos Informations de Paiement</h3><img id="image-cards" src="assets/img/Accepted%20cards.png">
                     <h2></h2>
                 </div>
                 <div class="card-body" style="padding-top: 0px;">
@@ -107,21 +108,22 @@
                         </div>
                         <div class="form-row">
                             <div class="col-12"><label class="payment-form" for="cardNumber" style="color: rgb(255,255,255);margin-bottom: 0px;">Numero de Carte</label>
-                                <div class="input-group"><input class="form-control" type="tel" required="" id="cardNumber">
+                                <div class="input-group"><input class="form-control" type="tel" id="cardNumber" required="">
                                     <div class="input-group-append"><span class="input-group-text"><i class="fa fa-credit-card"></i></span></div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-7"><label class="payment-form" for="cardExpiry" style="color: rgb(255,255,255);">Date d'expiration</label><input class="form-control" type="tel" required="" placeholder="MM / YY" id="cardExpiry" style="font-size: 15px;"></div>
+                            <div class="col-7"><label class="payment-form" for="cardExpiry" style="color: rgb(255,255,255);">Date d'expiration</label><input class="form-control" type="tel" id="cardExpiry" style="font-size: 15px;" required="" placeholder="MM / YY"></div>
                             <div
-                                class="col-5 pull-right"><label class="payment-form" for="cardCVC" style="color: rgb(255,255,255);">CVV</label><input class="form-control" type="tel" required="" placeholder="CVV" id="cardCVC" style="font-size: 15px;"></div>
+                                class="col-5 pull-right"><label class="payment-form" for="cardCVC" style="color: rgb(255,255,255);">CVV</label><input class="form-control" type="tel" id="cardCVC" style="font-size: 15px;" required="" placeholder="CVV"></div>
                 </div>
                 <div class="form-row">
                     <div class="col-12"><label class="payment-form" for="couponCode" style="color: rgb(255,255,255);">Code Promo</label><input class="form-control" type="text" id="Name"></div>
                 </div>
                 <div class="form-row">
-                    <div class="col-12" style="margin-top: 20px;margin-bottom: 0px;"><a class="btn btn-success btn-block btn-lg" role="button" href="#" style="font-size: 25px;background-color: #517ca3;-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);">Paiement</a></div>
+                    <div class="col-12" style="margin-top: 20px;margin-bottom: 0px;"><a class="btn btn-success btn-block btn-lg" role="button" style="font-size: 25px;background-color: #517ca3;-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);"
+                            href="#">Paiement</a></div>
                 </div>
                 </form>
             </div>
@@ -133,10 +135,10 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" style="color: rgb(10,65,88);">Contactez-nous</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body"><input type="text" placeholder="Nom" style="width: 100%;margin-bottom: 15px;"><input type="text" placeholder="Prénom" style="width: 100%;margin-bottom: 15px;"><input type="email" placeholder="Email" style="width: 100%;margin-bottom: 60px;">
+                <div class="modal-body"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Nom"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Prénom"><input type="email" style="width: 100%;margin-bottom: 60px;" placeholder="Email">
                     <label
                         style="color: rgb(10,65,88);">Sujet: &nbsp;</label><input type="text" style="width: 87%;float: right;"><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal" style="color: white;">Fermer</button><button class="btn btn-primary" type="button" id="bouton-envoyer">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
+                <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
             </div>
         </div>
     </div>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cagliostro">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantarell">
@@ -36,17 +37,17 @@
     <div class="row" id="row-navbar">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
-                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img src="assets/img/A+.png" id="logo"></a><button class="navbar-toggler" data-toggle="collapse"
+                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img id="logo" src="assets/img/logo.png"></a><button data-toggle="collapse" class="navbar-toggler"
                         data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
+                    <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 100px;">
                         <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
                             <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose_kid_name.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="my_account.html">Mon Compte<i class="fa fa-user" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="add_kid.html">Ajouter un&nbsp;élève<i class="fa fa-user-plus" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="link-connexion">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" href="#modal-contact-us">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="login.html">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,17 +61,17 @@
             class="form-label">Adresse</label><input class="form-control form-input" type="text" required=""><label class="form-label">Code Postal</label><input class="form-control form-input" type="text" required="" inputmode="numeric"><label class="form-label">Ville</label>
             <input
                 class="form-control form-input" type="text" required="" inputmode="latin-name"><label class="form-label">Email</label><input class="form-control form-input" type="email"><label class="form-label">Telephone Mobile</label><input class="form-control form-input" type="tel">
-                <div id="button-suivant"><button class="btn btn-primary shadow-lg" type="button" id="bouton-suivant" style="font-weight: 200;">Enregistrer</button></div>
+                <div id="button-suivant"><button class="btn btn-primary shadow-lg" id="bouton-suivant" style="font-weight: 200;" type="button">Enregistrer</button></div>
     </form>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" style="color: rgb(10,65,88);">Contactez-nous</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body"><input type="text" placeholder="Nom" style="width: 100%;margin-bottom: 15px;"><input type="text" placeholder="Prénom" style="width: 100%;margin-bottom: 15px;"><input type="email" placeholder="Email" style="width: 100%;margin-bottom: 60px;">
+                <div class="modal-body"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Nom"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Prénom"><input type="email" style="width: 100%;margin-bottom: 60px;" placeholder="Email">
                     <label
                         style="color: rgb(10,65,88);">Sujet: &nbsp;</label><input type="text" style="width: 87%;float: right;"><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal" style="color: white;">Fermer</button><button class="btn btn-primary" type="button" id="bouton-envoyer">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
+                <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
             </div>
         </div>
     </div>

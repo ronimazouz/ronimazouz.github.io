@@ -1143,7 +1143,7 @@ button, input {
 #div-call-button {
   text-align: center;
   height: 20vh;
-  width: 70%;
+  width: 80%;
   position: absolute;
   z-index: 3;
   float: left;

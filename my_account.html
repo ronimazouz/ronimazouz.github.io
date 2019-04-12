@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andika">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cagliostro">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantarell">
@@ -36,40 +37,40 @@
     <div class="row" id="row-navbar">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
-                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img src="assets/img/A+.png" id="logo"></a><button class="navbar-toggler" data-toggle="collapse"
+                <div class="container-fluid"><a class="navbar-brand" href="javascript:history.go(-1)"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i><img id="logo" src="assets/img/logo.png"></a><button data-toggle="collapse" class="navbar-toggler"
                         data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
+                    <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 100px;">
                         <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
                             <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose_kid_name.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="my_account.html">Mon Compte<i class="fa fa-user" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="add_kid.html">Ajouter un&nbsp;élève<i class="fa fa-user-plus" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#modal-contact-us" data-toggle="modal">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" id="link-connexion">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" href="#modal-contact-us">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="login.html">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: 0px;padding: 0;margin-top: 100px;">Votre compte Tuto</h1><a href="edit_parent_info.html" style="font-family: Lato, sans-serif;font-size: 16px;">Editer</a>
+    <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: 0px;padding: 0;margin-top: 100px;">Votre compte Tuto</h1><a style="font-family: Lato, sans-serif;font-size: 16px;" href="edit_parent_info.html">Editer</a>
     <h5 class="text-center" style="color: rgb(255,255,255);font-weight: 200;font-family: 'Lato';margin-top: 30px;">Total consommation ce mois-ci:<br></h5><span id="text-spent-mins">{{23}}&nbsp;</span><span style="font-size: 20px;font-weight: 200;font-family: 'Lato';">minutes&nbsp;</span>
     <h5 class="text-center" style="color: rgb(255,255,255);font-weight: 200;margin-top: 15px;font-family: 'Lato';">Il vous reste:</h5>
     <div style="margin-bottom: 3vh;"><span id="left-mins" style="font-size: 20px;font-family: 'Lato';">13</span><span style="font-size: 20px;font-family: 'Lato';">&nbsp;minutes sur votre forfait</span></div>
-    <div id="div-kid-name"><a href="kid_account.html" id="link-kid-name" class="link">{kid-name}</a></div>
-    <div id="div-kid-name"><a href="kid_account.html" id="link-kid-name" class="link">{kid-name}</a></div>
-    <div id="div-kid-name"><a href="kid_account.html" id="link-kid-name" class="link">{kid-name}</a></div><button class="btn btn-primary shadow" onclick=location.href="payment-page.html" type="button" id="bouton-ajouter-mins">Ajouter des minutes</button>
+    <div id="div-kid-name"><a id="link-kid-name" class="link" href="kid_account.html">{kid-name}</a></div>
+    <div id="div-kid-name"><a id="link-kid-name" class="link" href="kid_account.html">{kid-name}</a></div>
+    <div id="div-kid-name"><a id="link-kid-name" class="link" href="kid_account.html">{kid-name}</a></div><button class="btn btn-primary shadow" onclick=location.href="payment-page.html" type="button" id="bouton-ajouter-mins">Ajouter des minutes</button>
     <div id="div-accueil"><button class="btn btn-primary shadow" onclick=location.href="choose-kid-name.html" type="button" id="bouton-accueil">Accueil</button></div>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" style="color: rgb(10,65,88);">Contactez-nous</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body"><input type="text" placeholder="Nom" style="width: 100%;margin-bottom: 15px;"><input type="text" placeholder="Prénom" style="width: 100%;margin-bottom: 15px;"><input type="email" placeholder="Email" style="width: 100%;margin-bottom: 60px;">
+                <div class="modal-body"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Nom"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Prénom"><input type="email" style="width: 100%;margin-bottom: 60px;" placeholder="Email">
                     <label
                         style="color: rgb(10,65,88);">Sujet: &nbsp;</label><input type="text" style="width: 87%;float: right;"><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal" style="color: white;">Fermer</button><button class="btn btn-primary" type="button" id="bouton-envoyer">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
+                <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
             </div>
         </div>
     </div>
