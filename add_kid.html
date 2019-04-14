@@ -41,11 +41,12 @@
                         data-target="#navcol-1"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 100px;">
                         <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
-                            <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose_kid_name.html">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
+                            <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose_kid_name.html">Demander un Cours<i class="fa fa-home" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="my_account.html">Mon Compte<i class="fa fa-user" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="add_kid.html">Ajouter un&nbsp;élève<i class="fa fa-user-plus" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="payment_page.html">Ajouter des minutes</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" href="#modal-contact-us">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="login.html">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                         </ul>
@@ -57,10 +58,12 @@
     <form class="register-form">
         <h2 class="text-center">Ajouter un élève&nbsp;à votre compte&nbsp;<br></h2>
         <h2 class="text-center form-heading"></h2>
-        <h4 class="text-center form-subheading">Vos Informations<br></h4><label class="form-label">Nom</label><input class="form-control form-input" type="text" required="" inputmode="latin-name"><label class="form-label">Prénom</label><input class="form-control form-input" type="text" required=""
-            inputmode="latin-name"><label class="form-label">Date de naissance</label><input class="form-control form-input" required="" type="date"><label class="form-label">Classe</label><select class="form-control form-input" required=""><optgroup label=""><option value="12" selected="">CP</option><option value="13">CE1</option><option value="14">CE2</option><option value="15">CM1</option><option value="">CM2</option><option value="">6ÈME</option><option value="">5ÈME</option><option value="">4ÈME</option><option value="">3ÈME</option></optgroup></select>
+        <h4 class="text-center form-subheading">Vos Informations<br></h4><label class="form-label">Nom&nbsp;de l'élève</label><input class="form-control form-input" type="text" required="" inputmode="latin-name"><label class="form-label">Prénom&nbsp;de l'élève</label><input class="form-control form-input"
+            type="text" required="" inputmode="latin-name"><label class="form-label">Date de naissance</label><input class="form-control form-input" required="" type="date"><label class="form-label">Classe</label><select class="form-control form-input" required=""><optgroup label=""><option value="12" selected="">CP</option><option value="13">CE1</option><option value="14">CE2</option><option value="15">CM1</option><option value="">CM2</option><option value="">6ÈME</option><option value="">5ÈME</option><option value="">4ÈME</option><option value="">3ÈME</option></optgroup></select>
         <label
-            class="form-label">Email</label><input class="form-control form-input" type="text" required="" inputmode="email"><label class="form-label">Telephone Mobile</label><input class="form-control form-input" type="tel">
+            class="form-label">Email&nbsp;de l'élève (ou celui du parent)</label><input class="form-control form-input" type="text" required="" inputmode="email"><label class="form-label">Telephone Mobile&nbsp;de l'élève (ou celui du parent)</label><input class="form-control form-input"
+                type="tel"><label class="form-label">Créer le mot de passe du compte élève</label><input class="form-control" type="password" placeholder="Mot de passe élève" style="font-size: 16px;"><input class="form-control" type="password" placeholder="Confirmation du mot de passe"
+                style="font-size: 16px;">
             <div id="Submit-buttons" class="div-2buttons" style="height: 52px;text-align: center;margin-top: 30px;"><button class="btn btn-primary" type="button" id="Button-Ajouter" onclick=location.href="choose-kid-name.html" ; style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;text-align: center;float: none;line-height: 25px;">Ajouter l&#39;élève</button></div>
     </form>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
