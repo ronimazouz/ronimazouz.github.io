@@ -1514,3 +1514,7 @@ a {
   width: 300%;
 }
 
+#Button-Suivant:hover {
+  background-color: #244767;
+}
+
