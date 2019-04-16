@@ -175,12 +175,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  .footer-clean {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
   .contr {
     display: none;
   }
@@ -189,6 +183,7 @@ body {
 .navbar.navbar-light.navbar-expand-md.fixed-top.navbar-logged-in.navbar-overlay {
   padding-top: 0px;
   padding-bottom: 0px;
+  padding-right: 0;
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
