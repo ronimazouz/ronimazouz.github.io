@@ -57,7 +57,7 @@
         </div>
     </div>
     <h1 class="text-center page-title">Details du Tuto</h1>
-    <p class="text-center" id="paragraph-details-tuto" style="color: rgb(255,255,255);font-size: 25px;margin-bottom: 30px;">Le&nbsp;<span>{date},</span><span>{kid-first-name}</span><span>&nbsp;a suivi un tuto d'une durée de&nbsp;</span><span>{mins}</span><span>&nbsp;en {subject-name}</span><span>&nbsp;avec {tutor-first-name}</span></p>
+    <p class="text-center" id="paragraph-details-tuto" style="color: rgb(255,255,255);font-size: 25px;margin-bottom: 30px;">Le&nbsp;<span>{{ tuto_date }}},</span><span>&nbsp;{{ first_name }}</span><span>&nbsp;a suivi un tuto d'une durée de&nbsp;</span><span>{{ tuto_mins}}</span><span>&nbsp;en {{ topic }}</span><span>&nbsp;avec {{ tutor_first_name }}</span></p>
     <div style="text-align: center;"><button class="btn btn-primary" type="button" style="height: 60px;font-size: 20px;font-weight: 100;">Revoir ce Tuto</button></div>
     <div id="div-report-problem"><a data-toggle="modal" style="font-weight: 200;font-size: 16px;" href="#modal-report-problem">Signaler un problème avec ce tuto</a></div>
     <div id="div-show-accueil"><button class="btn btn-primary shadow" onclick=location.href="choose_kid_name.html" type="button" id="bouton-accueil">Valider</button></div>
