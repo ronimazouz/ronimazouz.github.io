@@ -37,21 +37,21 @@
     <div class="row" id="row-navbar">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay" style="/*padding-right: 0px;*/">
-                <div class="container-fluid"><a class="navbar-brand" style="color: rgb(255,255,255);font-family: Adamina, serif;font-size: 20px;"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i>&nbsp; Tuto Academy</a><button data-toggle="collapse"
-                        class="navbar-toggler" data-target="#navcol-1" style="position: static;float: right;padding-bottom: 0px;padding-right: 0px;"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
-                    <div class="collapse navbar-collapse"
-                        id="navcol-1" style="margin-left: 100px;">
-                        <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
-                            <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose_kid_name.html">Demander un Tuto<i class="fas fa-user-graduate" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="my_account.html">Mon Compte<i class="fas fa-address-card" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="add_kid.html">Ajouter un&nbsp;élève<i class="fa fa-user-plus" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="payment_page.html"><i class="fas fa-plus-circle" id="menu-icon"></i>&nbsp;Ajouter des minutes</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" href="#modal-contact-us">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="login.html">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="container-fluid"><a class="navbar-brand" style="color: rgb(255,255,255);font-family: Adamina, serif;font-size: 20px;" href="javascript:history.go(-1)"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i>&nbsp; Tuto Academy</a>
+                    <button
+                        data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="position: static;float: right;padding-bottom: 0px;padding-right: 0px;"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 100px;">
+                            <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
+                                <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" href="choose_kid_name.html">Demander un Tuto<i class="fas fa-user-graduate" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="my_account.html">Mon Compte<i class="fas fa-address-card" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="kid_account.html">{{kid-name}}<i class="fa fa-odnoklassniki" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="add_kid.html">Ajouter un&nbsp;élève<i class="fa fa-user-plus" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="payment_page.html"><i class="fas fa-plus-circle" id="menu-icon"></i>&nbsp;Ajouter des minutes</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" href="#modal-contact-us">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="login.html">Déconnexion &nbsp;<i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
+                            </ul>
+                        </div>
                 </div>
             </nav>
         </div>
@@ -65,7 +65,7 @@
             class="form-label">Email&nbsp;de l'élève (ou celui du parent)</label><input class="form-control form-input" type="text" required="" inputmode="email"><label class="form-label">Telephone Mobile&nbsp;de l'élève (ou celui du parent)</label><input class="form-control form-input"
                 type="tel"><label class="form-label">Créer le mot de passe du compte élève</label><input class="form-control" type="password" placeholder="Mot de passe élève" style="font-size: 16px;"><input class="form-control" type="password" placeholder="Confirmation du mot de passe"
                 style="font-size: 16px;">
-            <div id="Submit-buttons" class="div-2buttons" style="height: 52px;text-align: center;margin-top: 30px;"><button class="btn btn-primary" type="button" id="Button-Ajouter" onclick=location.href="choose-kid-name.html" ; style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;text-align: center;float: none;line-height: 25px;">Ajouter l&#39;élève</button></div>
+            <div id="Submit-buttons" class="div-2buttons" style="height: 52px;text-align: center;margin-top: 30px;"><button class="btn btn-primary" type="button" id="Button-Ajouter" onclick=location.href="choose_kid_name.html" ; style="padding-top: 0px;padding-bottom: 0px;padding-right: 0px;padding-left: 0px;text-align: center;float: none;line-height: 25px;">Ajouter l&#39;élève</button></div>
     </form>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
