@@ -640,7 +640,7 @@ link {
 @media (min-width: 850px) {
   #div-scroll {
     width: auto;
-    height: 50vh;
+    height: 40vh;
     overflow: auto;
   }
 }
