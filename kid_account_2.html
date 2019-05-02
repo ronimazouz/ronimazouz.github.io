@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="assets/css/website.css">
 </head>
 
-<body>
+<body style="text-align: center;">
     <div class="row" id="row-navbar">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay" style="/*padding-right: 0px;*/">
@@ -56,82 +56,15 @@
             </nav>
         </div>
     </div>
-    <div class="row" id="row-payment-form" style="margin: 120px 0 0 0;">
-        <div class="col column-payment" id="column-forfaits">
-            <div class="card shadow-lg" id="panel-forfaits">
-                <div class="card-header">
-                    <h3 class="text-center" style="color: rgb(255,255,255);font-size: 25px;">Les Forfaits</h3>
-                    <h2></h2>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card card-forfaits">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
-                            <div class="card-body card-body-forfaits">
-                                <div class="form-check" id="Forfait-15mins"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2" style="font-size: 16px;">Forfait 15 Minutes:&nbsp;<span>6,99€</span></label></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card card-forfaits">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
-                            <div class="card-body card-body-forfaits">
-                                <div class="form-check" id="forfait-30mins"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3" style="font-size: 16px;">Forfait 30 Minutes: 12,99€&nbsp;</label></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card card-forfaits">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
-                            <div class="card-body card-body-forfaits" id="forfait-60mins">
-                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-size: 16px;">Forfait 60 Minutes: 19,99€&nbsp;</label></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 column-payment" id="column-payment-info">
-            <div class="card shadow-lg credit-card-box">
-                <div class="card-header">
-                    <h3 class="text-center" style="color: rgb(255,255,255);font-size: 25px;">Vos Informations de Paiement</h3><img id="image-cards" src="assets/img/Accepted%20cards.png">
-                    <h2></h2>
-                </div>
-                <div class="card-body" style="padding-top: 0px;">
-                    <form id="payment-form">
-                        <div class="form-row">
-                            <div class="col-5 col-sm-7 col-md-5 col-lg-5 col-xl-5"><label class="col-form-label" for="" style="color: rgb(255,255,255);font-size: 20px;padding-top: 0px;">Votre Total:</label></div>
-                            <div class="col-7 col-sm-5 col-md-7 col-lg-7 col-xl-7" style="font-size: 25px;"><label class="col-form-label" for="cardNumber" style="color: rgb(255,255,255);font-size: 20px;padding-top: 0px;">{total}</label></div>
-                            <div class="col-12"><label class="payment-form" style="color: rgb(255,255,255);margin-bottom: 0px;">Nom</label><input class="form-control" type="text" id="couponCode"></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-12"><label class="payment-form" for="cardNumber" style="color: rgb(255,255,255);margin-bottom: 0px;">Numero de Carte</label>
-                                <div class="input-group"><input class="form-control" type="tel" id="cardNumber" required="">
-                                    <div class="input-group-append"><span class="input-group-text"><i class="fa fa-credit-card"></i></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-7"><label class="payment-form" for="cardExpiry" style="color: rgb(255,255,255);">Date d'expiration</label><input class="form-control" type="tel" id="cardExpiry" style="font-size: 15px;" required="" placeholder="MM / YY"></div>
-                            <div
-                                class="col-5 pull-right"><label class="payment-form" for="cardCVC" style="color: rgb(255,255,255);">CVV</label><input class="form-control" type="tel" id="cardCVC" style="font-size: 15px;" required="" placeholder="CVV"></div>
-                </div>
-                <div class="form-row">
-                    <div class="col-12"><label class="payment-form" for="couponCode" style="color: rgb(255,255,255);">Code Promo</label><input class="form-control" type="text" id="Name"></div>
-                </div>
-                <div class="form-row">
-                    <div class="col-12" style="margin-top: 20px;margin-bottom: 0px;"><a class="btn btn-success btn-block btn-lg" role="button" style="font-size: 25px;background-color: #517ca3;-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);"
-                            href="#">Paiement</a></div>
-                </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    </div>
+    <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: 0px;">Paul</h1><a style="font-size: 16px;color: rgb(255,255,255);" href="edit_kid_info.html">Modifier</a>
+    <h5 class="text-center" style="margin-top: 30px;">Total minutes ce mois ci:</h5>
+    <h5 class="text-center" style="color: rgb(255,255,255);margin-bottom: 50px;"><span>13</span>&nbsp;minutes</h5>
+    <h3 class="text-center" id="heading-histo-tutos" style="color: rgb(255,255,255);margin-bottom: 0px;padding-bottom: 15px;font-weight: 200;">Historique des Tutos:</h3>
+    <div id="div-scroll" style="position: relative;z-index: 1;"><div id="div-histo-tutos" class="div-list div-histo"; onclick=location.href="tuto_details.html" style="background-color: rgba(0,0,0,0.5);height: 100px;position: relative;z-index: 15;cursor: pointer;"><img src="assets/img/tutor3.jpg" class="img-tutor" /><img id="image-arrow" src="assets/img/chevron-right.png"></img>
+    <h1 id="heading-tutos-details" style="color: rgb(255,255,255);">le 27 janvier 2019-Mathieu-Anglais-7 minutes</h1>
+</div><div id="div-histo-tutos" class="div-list div-histo"; onclick=location.href="tuto_details.html" style="background-color: rgba(0,0,0,0.5);height: 100px;position: relative;z-index: 15;cursor: pointer;"><img src="assets/img/tutor4.jpg" class="img-tutor" /><img id="image-arrow" src="assets/img/chevron-right.png"></img>
+    <h1 id="heading-tutos-details" style="color: rgb(255,255,255);">le 27 janvier 2019-Mathieu-Anglais-7 minutes</h1>
+</div></div>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
