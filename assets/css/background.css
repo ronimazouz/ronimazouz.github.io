@@ -162,10 +162,8 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  #body-choose {
-    height: 100vh;
-  }
+#body-choose {
+  height: 100vh;
 }
 
 .w-100.d-block {
