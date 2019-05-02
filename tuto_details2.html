@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="assets/css/website.css">
 </head>
 
-<body style="text-align: center;">
+<body>
     <div class="row" id="row-navbar">
         <div class="col">
             <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay" style="/*padding-right: 0px;*/">
@@ -57,16 +57,36 @@
             </nav>
         </div>
     </div>
-    <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: 0px;">Pierre</h1><a style="font-size: 16px;color: rgb(255,255,255);" href="edit_kid_info.html">Modifier</a>
-    <h5 class="text-center" style="margin-top: 30px;">Total minutes ce mois ci:</h5>
-    <h5 class="text-center" style="color: rgb(255,255,255);margin-bottom: 50px;"><span>13</span>&nbsp;minutes</h5>
-    <h3 class="text-center" id="heading-histo-tutos" style="color: rgb(255,255,255);margin-bottom: 0px;padding-bottom: 15px;font-weight: 200;">Historique des Tutos:</h3>
-    <div id="div-scroll" style="position: relative;z-index: 1;"><div id="div-histo-tutos" class="div-list div-histo"; onclick=location.href="tuto_details.html" style="background-color: rgba(0,0,0,0.5);height: 100px;position: relative;z-index: 15;cursor: pointer;"><img src="assets/img/tutor-2.jpg" class="img-tutor" /><img id="image-arrow" src="assets/img/chevron-right.png"></img>
-    <h1 id="heading-tutos-details" style="color: rgb(255,255,255);">le 27 janvier 2019-Clara-Anglais-7 minutes</h1>
-</div><div id="div-histo-tutos" class="div-list div-histo"; onclick=location.href="tuto_details2.html" style="background-color: rgba(0,0,0,0.5);height: 100px;position: relative;z-index: 15;cursor: pointer;"><img src="assets/img/tutor.jpg" class="img-tutor" /><img id="image-arrow" src="assets/img/chevron-right.png"></img>
-    <h1 id="heading-tutos-details" style="color: rgb(255,255,255);">le 2 Fevrier 2019-Alexandra-Anglais-12 minutes</h1>
-</div></div>
-    <div id="div-accueil" style="padding-top: 30px;"><a class="btn btn-primary shadow" role="button" id="bouton-accueil" href="my_account.html" style="line-height: 60px;">Mon Compte</a></div>
+    <h1 class="text-center page-title">Details du Tuto</h1>
+    <p class="text-center" id="paragraph-details-tuto" style="color: rgb(255,255,255);font-size: 25px;margin-bottom: 30px;">Le&nbsp;<span>27 Janvier 2019,</span><span>Pierre</span><span>&nbsp;a suivi un tuto d'une durée de&nbsp;</span><span>7 minutes</span><span>&nbsp;en Anglais</span><span>&nbsp;avec Mathieu</span></p>
+    <div style="text-align: center;"><a class="btn btn-primary" role="button" style="height: 60px;font-size: 20px;font-weight: 100;color: rgb(255,255,255);line-height: 45px;" data="" href="tuto_watch2.html">Revoir ce Tuto</a></div>
+    <div id="div-report-problem"><a data-toggle="modal" style="font-weight: 200;font-size: 16px;" href="#modal-report-problem">Signaler un problème avec ce tuto</a></div>
+    <div id="div-show-accueil"><button class="btn btn-primary shadow" onclick=location.href="choose_kid_name.html" type="button" id="bouton-accueil">Valider</button></div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-report-problem">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(10,65,88);">Signaler un problème</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Nom"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Prénom"><input type="email" style="width: 100%;margin-bottom: 60px;" placeholder="Email">
+                    <label
+                        style="color: rgb(10,65,88);">Sujet: &nbsp;</label><span style="color: rgb(10,65,88);border-bottom: solid 1px rgb(10,65,88);">Problème avec le tuto du {tuto-date, avec {tutor-first-name}</span><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
+                <div
+                    class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-message-thank-you">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Confirmation d'envoi</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p>Merci pour votre message, nous y répondrons dans les plus brefs delais.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" type="button">Fermer</button></div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -79,6 +99,7 @@
             </div>
         </div>
     </div>
+    <div id="div-accueil"><a class="btn btn-primary shadow" role="button" id="bouton-accueil" href="kid_account.html" style="line-height: 60px;">Compte de Pierre</a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/BS4-BetterNav.js"></script>
