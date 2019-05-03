@@ -434,13 +434,13 @@
 
 @media (min-width: 577px) {
   #div-accueil {
-    padding-top: 5vw;
+    padding-top: 3vw;
   }
 }
 
 @media (max-width: 576px) {
   #div-accueil {
-    padding-top: 10vw;
+    padding-top: 7vw;
   }
 }
 
@@ -1104,6 +1104,8 @@ button, input {
   font-weight: 200;
   width: 100%;
   font-family: 'Lato';
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 
 #nav-icon {
