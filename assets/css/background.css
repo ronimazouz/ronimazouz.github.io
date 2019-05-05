@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(-45deg, #ee7752, #cc2b5e, #123f64, #23D5AB);
-  background-size: 500% 400%;
+  background-size: 500% 4000%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
@@ -163,7 +163,7 @@ body {
 }
 
 #body-choose {
-  height: 100vh;
+  height: 90vh;
 }
 
 .w-100.d-block {
