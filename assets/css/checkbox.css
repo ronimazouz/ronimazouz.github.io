@@ -34,6 +34,8 @@ input[type="checkbox"]:checked + label:before {
   border-left-color: transparent;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  border-right-color: green;
+  border-bottom-color: green;
 }
 
 .form-check-label {
