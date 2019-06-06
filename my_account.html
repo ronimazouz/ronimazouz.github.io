@@ -69,30 +69,42 @@
             </div>
         </div>
     </div>
-    <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: -5px;padding: 0;margin-top: 80px;">Votre compte</h1><a style="font-family: Lato, sans-serif;font-size: 16px;" href="edit_parent_info.html">Modifier vos Informations</a>
-    <div style="margin-bottom: 30px;">
-        <div class="container" style="max-width: 500px;width: 95%;">
+    <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: -5px;padding: 0;margin-top: 80px;">Votre compte</h1>
+    <div><a style="font-family: Lato, sans-serif;font-size: 16px;" href="edit_parent_info.html">Modifier vos Informations</a></div>
+    <div>
+        <div class="container" style="max-width: 500px;width: 95%;padding-bottom: 5px;">
             <div class="row">
                 <div class="col-6 col-md-6 col-xl-6" style="border: 1px solid white;background-color: rgba(0,0,0,0.5);border-top-left-radius: 10px;">
-                    <h5 style="font-family: 'Lato';font-weight: 100;">Total consommation ce mois-ci:</h5>
+                    <h5 style="font-family: 'Lato';font-weight: 500;">Total consommation ce mois-ci:</h5>
                 </div>
                 <div class="col-6 col-md-6" style="border: 1px solid white;background-color: rgba(0,0,0,0.5);border-top-right-radius: 10px;">
-                    <h5 style="font-family: 'Lato';font-weight: 100;">Il vous reste sur votre forfait:</h5>
+                    <h5 style="font-family: 'Lato';font-weight: 500;">Vous avez fixé votre limite mensuelle à:</h5>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 col-md-6" style="border: 1px solid white;border-top: 0px;background-color: rgba(0,0,0,0.5);border-bottom-left-radius: 10px;">
-                    <h5 style="font-family: 'Lato';font-weight: 100;">7 minutes</h5>
+                    <h5 style="font-family: 'Lato';font-weight: 100;">7 minutes (soit 3.15 €)</h5>
                 </div>
                 <div class="col-6 col-md-6" style="border: 1px solid white;border-top: 0px;background-color: rgba(0,0,0,0.5);border-bottom-right-radius: 10px;">
-                    <h5 style="font-family: 'Lato';font-weight: 100;">23 minutes</h5>
+                    <h5 style="font-family: 'Lato';font-weight: 100;">20 € par mois maximum</h5>
                 </div>
             </div>
         </div>
     </div>
+    <div style="margin-bottom: 50px;"><a style="font-family: Lato, sans-serif;font-size: 16px;" href="#modal-parental-control" data-toggle="modal">Modifier vos Informations de paiement</a></div>
     <div id="div-kid-name"><a id="link-kid-name" class="link" href="kid_account.html">Voir le compte de Pierre</a></div>
     <div id="div-kid-name"><a id="link-kid-name" class="link" href="kid_account_2.html">Voir le compte de Paul</a></div>
-    <div id="div-kid-name"><a id="link-kid-name" class="link" href="kid_account.html">Voir le compte de Jacques</a></div><button class="btn btn-primary shadow" onclick=location.href="payment_page.html" type="button" id="bouton-ajouter-mins">Ajouter des minutes</button>
+    <div id="div-kid-name"><a id="link-kid-name" class="link" href="kid_account.html">Voir le compte de Jacques</a></div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-parental-control">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(67,59,59);">Veuillez entrer votre code parental</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body"><input type="password" style="background-color: grey;color: white;border-radius: 10px;border: none;font-size: 25px;"></div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Fermer</button><button class="btn btn-primary" type="button">Acces</button></div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/BS4-BetterNav.js"></script>
