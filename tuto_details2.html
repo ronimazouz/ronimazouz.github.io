@@ -61,8 +61,13 @@
     <p class="text-center" id="paragraph-details-tuto" style="color: rgb(255,255,255);font-size: 25px;margin-bottom: 30px;">Le&nbsp;<span>2 Fevrier 2019,</span><span>Pierre</span><span>&nbsp;a suivi un tuto d'une durée de&nbsp;</span><span>13 minutes</span><span>&nbsp;en Math</span><span>&nbsp;avec Alexandra</span></p>
     <div style="text-align: center;"><a class="btn btn-primary" role="button" style="height: 60px;font-size: 20px;font-weight: 100;color: rgb(255,255,255);line-height: 45px;" data="" href="tuto_watch2.html">Revoir ce Tuto</a></div>
     <div id="div-report-problem"><a data-toggle="modal" style="font-weight: 200;font-size: 16px;" href="#modal-report-problem">Signaler un problème avec ce tuto</a></div>
-    <div id="div-show-accueil"><button class="btn btn-primary shadow" onclick=location.href="choose_kid_name.html" type="button" id="bouton-accueil">Valider</button></div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-report-problem">
+    <div id="div-show-accueil">
+        <div id="social-media" style="width: 400px;margin: 0 auto;text-align: center;margin-bottom: 30px;">
+            <h4 class="text-center" style="margin-bottom: 10px;">Vous avez aimé?<br>N'hésitez pas a parler de Tuto a vos amis!</h4><a id="link-social" href="#" style="background-color: #1DA1F2;"><i class="icon ion-social-twitter"></i></a><a id="link-social" href="#" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);"><i class="icon-social-instagram" style="font-size: 40px;position: relative;top: 9%;"></i></a>
+            <a
+                id="link-social" href="#" style="background-color: yellow;"><img src="assets/img/snap-ghost.png" style="width: 65%;position: relative;top: -8%;"></a><a id="link-social" href="#" style="background-color: #3b5998;"><i class="icon ion-social-facebook"></i></a></div><button class="btn btn-primary shadow" onclick=location.href="choose_kid_name.html" type="button" id="bouton-accueil">Valider</button></div>
+    <div
+        class="modal fade" role="dialog" tabindex="-1" id="modal-report-problem">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -73,40 +78,40 @@
                 <div
                     class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
         </div>
-    </div>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-message-thank-you">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Confirmation d'envoi</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <p>Merci pour votre message, nous y répondrons dans les plus brefs delais.</p>
+        </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-message-thank-you">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Confirmation d'envoi</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body">
+                        <p>Merci pour votre message, nous y répondrons dans les plus brefs delais.</p>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" type="button">Fermer</button></div>
                 </div>
-                <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" type="button">Fermer</button></div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" style="color: rgb(10,65,88);">Contactez-nous</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Nom"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Prénom"><input type="email" style="width: 100%;margin-bottom: 60px;" placeholder="Email">
-                    <label
-                        style="color: rgb(10,65,88);">Sujet: &nbsp;</label><input type="text" style="width: 87%;float: right;"><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
-                <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" style="color: rgb(10,65,88);">Contactez-nous</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Nom"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Prénom"><input type="email" style="width: 100%;margin-bottom: 60px;" placeholder="Email">
+                        <label
+                            style="color: rgb(10,65,88);">Sujet: &nbsp;</label><input type="text" style="width: 87%;float: right;"><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
+                    <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="div-accueil"><a class="btn btn-primary shadow" role="button" id="bouton-accueil" href="kid_account.html" style="line-height: 60px;">Compte de Pierre</a></div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/BS4-BetterNav.js"></script>
-    <script src="assets/js/full-screen.js"></script>
-    <script src="assets/js/Photo%20upload.js"></script>
-    <script src="assets/js/Review-rating-Star-Review-Button.js"></script>
-    <script src="assets/js/scripts.js"></script>
+        <div id="div-accueil"><a class="btn btn-primary shadow" role="button" id="bouton-accueil" href="kid_account.html" style="line-height: 60px;">Compte de Pierre</a></div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/BS4-BetterNav.js"></script>
+        <script src="assets/js/full-screen.js"></script>
+        <script src="assets/js/Photo%20upload.js"></script>
+        <script src="assets/js/Review-rating-Star-Review-Button.js"></script>
+        <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

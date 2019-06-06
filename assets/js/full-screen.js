@@ -86,11 +86,6 @@ function changeimg4() {
 function showDiv(){
     document.getElementById('div-show-accueil').setAttribute('style', 'display:block');
 }
-    
-
- 
-
-
 
 
 

@@ -57,42 +57,30 @@
             </nav>
         </div>
     </div>
-    <div class="row" id="row-payment-form" style="margin: 120px 0 0 0;">
+    <div class="row" id="row-payment-form" style="margin: 80px 0 0 0;">
         <div class="col column-payment" id="column-forfaits">
             <div class="card shadow-lg" id="panel-forfaits">
                 <div class="card-header">
-                    <h3 class="text-center" style="color: rgb(255,255,255);font-size: 25px;">Les Forfaits</h3>
+                    <h3 class="text-center" style="color: rgb(255,255,255);font-size: 25px;">Tarifs</h3>
                     <h2></h2>
                 </div>
                 <div class="row">
                     <div class="col" style="padding-bottom: 19px;">
                         <div class="card card-forfaits">
-                            <div class="card-header bg-transparent border-0" style="margin: 0;padding: 0;"><img src="assets/img/logo_orange.png" style="width: 20%;position: relative;left: 40%;margin-top: 5px;"></div>
+                            <div class="card-header bg-transparent border-0" style="margin: 0;padding: 0;"></div>
                             <div class="card-body card-body-forfaits">
-                                <div class="form-check" id="Forfait-15mins"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2" style="font-size: 18px;">Forfait 15 Minutes:&nbsp;<span>6,99€</span></label></div>
+                                <p style="font-size: 18px;">Les 10 premières minutes de cours sont gratuites.<br>Puis, la minute de cours particulier s'élève à 0.45 € par minute (soit 27 € de l'heure).<br>Vous avez la possibilité de fixer une limite mensuelle afin que vos enfants
+                                    ne puissent pas utiliser le service au-delà de cette limite.<br>Le service sera alors bloqué et ils ne pourront plus l'utiliser jusqu'au début du mois suivant.<br>En tant que parent, vous avez la possibilité de réduire
+                                    ou d'augmenter cette limite a tout moment dans les informations de paiement de votre compte grâce au code parental que vous avez créez.<br></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <div class="card card-forfaits">
-                            <div class="card-header bg-transparent border-0" style="margin: 0;padding: 0;"><img src="assets/img/logo_pink.png" style="width: 20%;position: relative;left: 40%;margin-top: 5px;"></div>
-                            <div class="card-body card-body-forfaits">
-                                <div class="form-check" id="forfait-30mins"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3" style="font-size: 18px;">Forfait 30 Minutes: 12,99€&nbsp;</label></div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col"></div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <div class="card card-forfaits">
-                            <div class="card-header bg-transparent border-0" style="margin: 0;padding: 0;"><img src="assets/img/logo_blue.png" style="width: 20%;position: relative;left: 40%;margin-top: 5px;"></div>
-                            <div class="card-body card-body-forfaits" id="forfait-60mins">
-                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-size: 18px;">Forfait 60 Minutes: 19,99€&nbsp;</label></div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col"></div>
                 </div>
             </div>
         </div>
@@ -105,21 +93,22 @@
                 <div class="card-body" style="padding-top: 0px;">
                     <form id="payment-form">
                         <div class="form-row">
-                            <div class="col-5 col-sm-7 col-md-5 col-lg-5 col-xl-5"><label class="col-form-label" for="" style="color: rgb(255,255,255);font-size: 20px;padding-top: 0px;">Votre Total:</label></div>
-                            <div class="col-7 col-sm-5 col-md-7 col-lg-7 col-xl-7" style="font-size: 25px;"><label class="col-form-label" for="cardNumber" style="color: rgb(255,255,255);font-size: 20px;padding-top: 0px;">15 Euros</label></div>
-                            <div class="col-12"><label class="payment-form" style="color: rgb(255,255,255);margin-bottom: 0px;">Nom</label><input class="form-control" type="text" id="couponCode"></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-12"><label class="payment-form" for="cardNumber" style="color: rgb(255,255,255);margin-bottom: 0px;">Numero de Carte</label>
-                                <div class="input-group"><input class="form-control" type="tel" id="cardNumber" required="">
-                                    <div class="input-group-append"><span class="input-group-text"><i class="fa fa-credit-card"></i></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-7"><label class="payment-form" for="cardExpiry" style="color: rgb(255,255,255);">Date d'expiration</label><input class="form-control" type="tel" id="cardExpiry" style="font-size: 15px;" required="" placeholder="MM / YY"></div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-11" style="margin-bottom: 5px;"><label class="col-form-label" for="" style="color: rgb(255,255,255);font-size: 20px;padding-top: 0px;padding-bottom: 0px;">Je veux limiter ma dépense mensuelle&nbsp;à:</label></div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-11"
+                                style="margin-bottom: 20px;"><select class="form-control" style="color: rgb(255,255,255);"><option value="12" selected="">10 € par mois maximum</option><option value="13">15 € par mois maximum</option><option value="14">20 € par mois maximum</option><option value="14">25 € par mois maximum</option><option value="14">30 € par mois maximum</option></select></div>
                             <div
-                                class="col-5 pull-right"><label class="payment-form" for="cardCVC" style="color: rgb(255,255,255);">CVV</label><input class="form-control" type="tel" id="cardCVC" style="font-size: 15px;" required="" placeholder="CVV"></div>
+                                class="col-12"><label class="payment-form" style="color: rgb(255,255,255);margin-bottom: 0px;">Nom</label><input class="form-control" type="text" id="couponCode"></div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12"><label class="payment-form" for="cardNumber" style="color: rgb(255,255,255);margin-bottom: 0px;">Numero de Carte</label>
+                        <div class="input-group"><input class="form-control" type="tel" id="cardNumber" required="">
+                            <div class="input-group-append"><span class="input-group-text"><i class="fa fa-credit-card"></i></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-7"><label class="payment-form" for="cardExpiry" style="color: rgb(255,255,255);">Date d'expiration</label><input class="form-control" type="tel" id="cardExpiry" style="font-size: 15px;" required="" placeholder="MM / YY"></div>
+                    <div class="col-5 pull-right"><label class="payment-form" for="cardCVC" style="color: rgb(255,255,255);">CVV</label><input class="form-control" type="tel" id="cardCVC" style="font-size: 15px;" required="" placeholder="CVV"></div>
                 </div>
                 <div class="form-row">
                     <div class="col-12"><label class="payment-form" for="couponCode" style="color: rgb(255,255,255);">Code Promo</label><input class="form-control" type="text" id="Name"></div>

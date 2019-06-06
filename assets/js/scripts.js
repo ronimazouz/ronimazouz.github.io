@@ -51,4 +51,13 @@ $(document).on("touchend", function(e) {
 });
 
 
-      
+// unchecks checkbox with class= cb when another is checked
+function cbChange(obj) {
+var instate=(obj.checked);
+    var cbs = document.getElementsByClassName("cb");
+    for (var i = 0; i < cbs.length; i++) {
+        cbs[i].checked = false;
+    }
+    if(instate)obj.checked = true;
+}
+
