@@ -427,7 +427,7 @@
 
 #div-show-accueil {
   text-align: center;
-  display: none;
+  /*display: none;*/
   padding-top: 3vh;
 }
 

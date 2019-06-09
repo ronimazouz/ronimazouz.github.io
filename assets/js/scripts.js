@@ -60,4 +60,3 @@ var instate=(obj.checked);
     }
     if(instate)obj.checked = true;
 }
-
