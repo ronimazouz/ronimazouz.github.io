@@ -6,7 +6,6 @@
  * http://github.com/cferdinandi/smooth-scroll
  */
 
- var scroll = new SmoothScroll('a[href*="#"]');
 
 (function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
@@ -642,3 +641,5 @@
 	return SmoothScroll;
 
 }));
+
+var scroll = new SmoothScroll('a[href*="#"]');
