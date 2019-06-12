@@ -225,3 +225,7 @@ body {
   border-color: transparent;
 }
 
+#bouton-accueil: hover {
+  background-color: #244767;
+}
+
