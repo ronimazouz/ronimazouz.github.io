@@ -640,5 +640,3 @@
 	return SmoothScroll;
 
 }));
-
-var scroll = new SmoothScroll('a[href*="#"]');
