@@ -229,3 +229,19 @@ body {
   background-color: #244767;
 }
 
+@media (max-width: 767px) {
+  #div-menu {
+    /*border-bottom: 1px solid white;*/
+    margin-top: -75px;
+    margin-bottom: 50px;
+    width: 95%;
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  #div-menu {
+    display: none;
+  }
+}
+

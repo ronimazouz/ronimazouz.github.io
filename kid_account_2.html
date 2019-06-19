@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <link rel="stylesheet" href="assets/css/animsition.min.css">
     <link rel="stylesheet" href="assets/css/background.css">
     <link rel="stylesheet" href="assets/css/betternav.css">
     <link rel="stylesheet" href="assets/css/checkbox.css">
@@ -35,8 +36,10 @@
 
 <body style="text-align: center;">
     <div class="row" id="row-navbar">
+        <div class="col"></div>
+        <div class="col"></div>
         <div class="col">
-            <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay" style="/*padding-right: 0px;*/">
+            <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-logged-in navbar-overlay">
                 <div class="container-fluid"><a class="navbar-brand" style="color: rgb(255,255,255);font-family: Adamina, serif;font-size: 20px;" href="javascript:history.go(-1)"><i class="icon ion-ios-arrow-back" id="icon-back" style="color: white;font-size: 30px;"></i>&nbsp; Tuto Academy</a>
                     <button
                         data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="position: static;float: right;padding-bottom: 0px;padding-right: 0px;"><span class="navbar-toggler-icon"><i class="icon ion-navicon-round"></i></span></button>
@@ -57,33 +60,36 @@
             </nav>
         </div>
     </div>
-    <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: 0px;">Paul</h1>
-    <div style="text-align: center;margin-bottom: 10px;margin-top: -7px;"><a href="edit_kid_info.html" style="font-size: 16px;font-weight: 100;font-family: 'Lato';">Modifier les informations</a><span style="color: rgb(255,255,255);">&nbsp; - &nbsp;</span><a style="font-size: 16px;font-weight: 100;font-family: 'Lato';" href="#modal-delete-account"
-            data-toggle="modal">Supprimer ce compte</a></div>
-    <h5 class="text-center" style="margin-top: 10px;">Total minutes ce mois ci:</h5>
-    <h5 class="text-center" style="color: rgb(255,255,255);margin-bottom: 10px;"><span>13</span>&nbsp;minutes</h5><a class="btn btn-primary" role="button" style="margin-bottom: 30px;height: 52px;color: rgb(255,255,255);line-height: 40px;" href="choose_subject.html">Demander un Tuto pour Pierre</a>
-    <h3 class="text-center" id="heading-histo-tutos"
-        style="color: rgb(255,255,255);margin-bottom: 0px;font-weight: 200;">Historique des Tutos:</h3>
-    <div id="div-scroll" style="position: relative;z-index: 1;"><div id="div-histo-tutos" class="div-list div-histo"; onclick=location.href="tuto_details.html" style="background-color: rgba(0,0,0,0.5);height: 100px;position: relative;z-index: 15;cursor: pointer;"><img src="assets/img/tutor3.jpg" class="img-tutor" /><img id="image-arrow" src="assets/img/chevron-right.png"></img>
+    <div class="animsition">
+        <h1 class="text-center page-title" style="color: rgb(255,255,255);margin-bottom: 0px;">Paul</h1>
+        <div style="text-align: center;margin-bottom: 10px;margin-top: -7px;"><a href="edit_kid_info.html" style="font-size: 16px;font-weight: 100;font-family: 'Lato';">Modifier les informations</a><span style="color: rgb(255,255,255);">&nbsp; - &nbsp;</span><a style="font-size: 16px;font-weight: 100;font-family: 'Lato';"
+                href="#modal-delete-account" data-toggle="modal">Supprimer ce compte</a></div>
+        <h5 class="text-center" style="margin-top: 10px;">Total minutes ce mois ci:</h5>
+        <h5 class="text-center" style="color: rgb(255,255,255);margin-bottom: 10px;"><span>13</span>&nbsp;minutes</h5><a class="btn btn-primary" role="button" style="margin-bottom: 30px;height: 52px;color: rgb(255,255,255);line-height: 40px;" href="choose_subject.html">Demander un Tuto pour Pierre</a>
+        <h3 class="text-center" id="heading-histo-tutos"
+            style="color: rgb(255,255,255);margin-bottom: 0px;font-weight: 200;">Historique des Tutos:</h3>
+        <div id="div-scroll" style="position: relative;z-index: 1;"><div id="div-histo-tutos" class="div-list div-histo"; onclick=location.href="tuto_details.html" style="background-color: rgba(0,0,0,0.5);height: 100px;position: relative;z-index: 15;cursor: pointer;"><img src="assets/img/tutor3.jpg" class="img-tutor" /><img id="image-arrow" src="assets/img/chevron-right.png"></img>
     <h1 id="heading-tutos-details" style="color: rgb(255,255,255);">le 27 janvier 2019-Mathieu-Anglais-7 minutes</h1>
 </div><div id="div-histo-tutos" class="div-list div-histo"; onclick=location.href="tuto_details.html" style="background-color: rgba(0,0,0,0.5);height: 100px;position: relative;z-index: 15;cursor: pointer;"><img src="assets/img/tutor4.jpg" class="img-tutor" /><img id="image-arrow" src="assets/img/chevron-right.png"></img>
     <h1 id="heading-tutos-details" style="color: rgb(255,255,255);">le 27 janvier 2019-Mathieu-Anglais-7 minutes</h1>
 </div></div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" style="color: rgb(10,65,88);">Contactez-nous</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Nom"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Prénom"><input type="email" style="width: 100%;margin-bottom: 60px;" placeholder="Email">
-                    <label
-                        style="color: rgb(10,65,88);">Sujet: &nbsp;</label><input type="text" style="width: 87%;float: right;"><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
-                <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-contact-us">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" style="color: rgb(10,65,88);">Contactez-nous</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <div class="modal-body"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Nom"><input type="text" style="width: 100%;margin-bottom: 15px;" placeholder="Prénom"><input type="email" style="width: 100%;margin-bottom: 60px;" placeholder="Email">
+                        <label
+                            style="color: rgb(10,65,88);">Sujet: &nbsp;</label><input type="text" style="width: 87%;float: right;"><label style="color: rgb(10,65,88);width: 100%;margin-top: 10px;">Message: &nbsp;</label><textarea></textarea></div>
+                    <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" style="color: white;" type="button">Fermer</button><button class="btn btn-primary" id="bouton-envoyer" type="button">Envoyer &nbsp;<i class="fa fa-send"></i></button></div>
+                </div>
             </div>
         </div>
+        <div id="div-accueil" style="padding-top: 30px;"><a class="btn btn-primary shadow animsition-link" role="button" id="bouton-accueil" href="my_account.html" style="line-height: 60px;">Mon Compte</a></div>
     </div>
-    <div id="div-accueil" style="padding-top: 30px;"><a class="btn btn-primary shadow" role="button" id="bouton-accueil" href="my_account.html" style="line-height: 60px;">Mon Compte</a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/animsition.min.js"></script>
     <script src="assets/js/BS4-BetterNav.js"></script>
     <script src="assets/js/full-screen.js"></script>
     <script src="assets/js/Photo%20upload.js"></script>

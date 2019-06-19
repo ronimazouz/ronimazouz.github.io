@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <link rel="stylesheet" href="assets/css/animsition.min.css">
     <link rel="stylesheet" href="assets/css/background.css">
     <link rel="stylesheet" href="assets/css/betternav.css">
     <link rel="stylesheet" href="assets/css/checkbox.css">
@@ -41,72 +42,75 @@
                     <div
                         class="collapse navbar-collapse" id="navcol-1" style="margin-left: 100px;">
                         <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
-                            <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" id="link-accueil" href="index.html#div-accueil" onclick="closeMenu()">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
+                            <div id="div-menu"><img src="assets/img/logo.png" style="position: relative;width: 70%;"></div>
+                            <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" id="link-accueil" href="index.html#div-accueil" onclick="closeMenu()" >Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" id="link-comment" href="index.html#div-comment" onclick="closeMenu()">Comment ça marche?<i class="material-icons" id="menu-icon">info</i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#div-forfaits" onclick="closeMenu()">Tarif<i class="fa fa-star" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="register.html" onclick="closeMenu()">S&#39;inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="index2.html" onclick="closeMenu()">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#div-forfaits" onclick="closeMenu()" >Tarif<i class="fa fa-star" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link animsition-link" href="register.html" onclick="closeMenu()">S&#39;inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index2.html" onclick="closeMenu()" data-animsition-out-class="fade-out-right">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" href="#modal-contact-us" onclick="closeMenu()">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="welcome.html" onclick="closeMenu()">Connexion  <i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="welcome.html" onclick="closeMenu()" data-animsition-out-class="fade-out-right">Connexion  <i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                         </ul>
                 </div>
         </div>
         </nav>
     </div>
     </div>
-    <div id="div-accueil" style="padding-top: 10px;">
-        <h1 class="text-center" style="margin-top: 80px;font-family: 'Permanent Marker', cursive;"><img src="assets/img/logo.png"><br></h1>
-        <h2 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-bottom: 30px;color: white;"><span style="text-decoration: underline;">Le Soutien Scolaire et l'Aide aux Devoirs&nbsp;2 . 0</span><br></h2>
-        <div class="row" style="margin: 0px;">
-            <div class="col-sm-12 col-md-11 col-lg-12 col-xl-12">
-                <p class="text-left" style="margin-top: 20px;font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;border-radius: 10px;color: rgb(255,255,255);">• Un problème avec un exercice de Maths, Français, Physique, Anglais Etc..?<br></p>
-                <p class="text-left" style="margin-top: 20px;font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;border-radius: 10px;color: rgb(255,255,255);">• Un devoir à rendre et personne pour vous aider à le finir&nbsp;?<br></p>
-                <p class="text-left" style="margin-top: 20px;font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;border-radius: 10px;color: rgb(255,255,255);">• Un contrôle demain et une question urgente&nbsp;?<br></p>
+    <div class="animsition">
+        <div id="div-accueil" style="padding-top: 10px;">
+            <h1 class="text-center" style="margin-top: 80px;font-family: 'Permanent Marker', cursive;"><img src="assets/img/logo.png"><br></h1>
+            <h2 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-bottom: 30px;color: white;"><span style="text-decoration: underline;">Le Soutien Scolaire et l'Aide aux Devoirs&nbsp;2 . 0</span><br></h2>
+            <div class="row" style="margin: 0px;">
+                <div class="col-sm-12 col-md-11 col-lg-12 col-xl-12">
+                    <p class="text-left" style="margin-top: 20px;font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;border-radius: 10px;color: rgb(255,255,255);">• Un problème avec un exercice de Maths, Français, Physique, Anglais Etc..?<br></p>
+                    <p class="text-left" style="margin-top: 20px;font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;border-radius: 10px;color: rgb(255,255,255);">• Un devoir à rendre et personne pour vous aider à le finir&nbsp;?<br></p>
+                    <p class="text-left" style="margin-top: 20px;font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;border-radius: 10px;color: rgb(255,255,255);">• Un contrôle demain et une question urgente&nbsp;?<br></p>
+                </div>
+                <div class="col"><img style="width: 17em;border-radius: 10px;margin-left: 10px;margin-right: 20px;margin-bottom: 10px;" src="assets/img/Student_struggles.jpg"><img style="border-radius: 10px;width: 12em;position: relative;z-index: 2;" src="assets/img/student_struggles_2.jpg"></div>
             </div>
-            <div class="col"><img style="width: 17em;border-radius: 10px;margin-left: 10px;margin-right: 20px;margin-bottom: 10px;" src="assets/img/Student_struggles.jpg"><img style="border-radius: 10px;width: 12em;position: relative;z-index: 2;" src="assets/img/student_struggles_2.jpg"></div>
-        </div>
-        <h3 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-top: 70px;line-height: 40px;">Pas de problème<br>&nbsp;<span style="font-family: Adamina, serif;">&nbsp;Tuto Academy&nbsp;<img style="width: 40px;position: relative;top: -5px;" src="assets/img/A++.png">&nbsp;</span><br>est là pour vous aider&nbsp;!<br></h3>
-        <div class="row"
-            style="margin: 0px;">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="display: flex;">
-                <p class="text-left" style="font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;margin-left: 10px;margin-right: 10px;border-radius: 10px;color: white;margin-top: 30px;">• Téléchargez l’appli ou rendez-vous sur le site et l'on &nbsp;vous met <strong><span style="text-decoration: underline;">immédiatement</span></strong>&nbsp; en relation avec un Prof praticulier disponible pour vous aider par vidéo!<br><br>•
-                    Vous lui posez votre question, il vous explique et quand c’est fini vous raccrochez. C’est aussi simple que ça&nbsp;!<br></p>
+            <h3 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-top: 70px;line-height: 40px;">Pas de problème<br>&nbsp;<span style="font-family: Adamina, serif;">&nbsp;Tuto Academy&nbsp;<img style="width: 40px;position: relative;top: -5px;" src="assets/img/A++.png">&nbsp;</span><br>est là pour vous aider&nbsp;!<br></h3>
+            <div class="row"
+                style="margin: 0px;">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="display: flex;">
+                    <p class="text-left" style="font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;margin-left: 10px;margin-right: 10px;border-radius: 10px;color: white;margin-top: 30px;">• Téléchargez l’appli ou rendez-vous sur le site et l'on &nbsp;vous met <strong><span style="text-decoration: underline;">immédiatement</span></strong>&nbsp; en relation avec un Prof praticulier disponible pour vous aider par vidéo!<br><br>•
+                        Vous lui posez votre question, il vous explique et quand c’est fini vous raccrochez. C’est aussi simple que ça&nbsp;!<br></p>
+                </div>
+                <div class="col" style="display: flex;justify-content: center;align-items: center;"><img style="width: 80%;" src="assets/img/home_pic.png"></div>
             </div>
-            <div class="col" style="display: flex;justify-content: center;align-items: center;"><img style="width: 80%;" src="assets/img/home_pic.png"></div>
+            <h3 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-bottom: 20px;margin-top: 30px;"><span style="font-family: Adamina, serif;"><img style="width: 40px;position: relative;top: -10px;" src="assets/img/A++.png">Academy&nbsp;</span><br>C’est DE l’aide aux devoirs&nbsp;:<br>immeditiatement<br>Quand je veux<br>D’où je veux<br></h3>
         </div>
-        <h3 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-bottom: 20px;margin-top: 30px;"><span style="font-family: Adamina, serif;"><img style="width: 40px;position: relative;top: -10px;" src="assets/img/A++.png">Academy&nbsp;</span><br>C’est DE l’aide aux devoirs&nbsp;:<br>immeditiatement<br>Quand je veux<br>D’où je veux<br></h3>
-    </div>
-    <div id="div-comment"><i class="fa fa-star" style="color: white;font-size: 25px;display: flex;justify-content: center;align-items: center;"></i>
-        <h1 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-top: 70px;"><span style="text-decoration: underline;">Comment ça marche?</span></h1>
-        <div class="row" style="margin: 0px;">
-            <div class="col-sm-12 col-md-6 col-lg-7 col-xl-7" style="display: flex;">
-                <p class="text-left" style="font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;margin-left: 10px;margin-right: 10px;border-radius: 10px;color: white;margin-top: 30px;">•&nbsp;Je télécharge l’appli ou je me rends sur le site &nbsp;<span style="font-family: Adamina, serif;"><img style="width: 40px;position: relative;top: -5px;" src="assets/img/A++.png">Academy&nbsp;</span><br><br>•&nbsp;Je choisis la matière
-                    dans laquelle j’ai une question.<br><br>•&nbsp;Je suis mis immédiatement en relation par vidéo sur mon téléphone ou mon ordinateur avec un tuteur disponible pour m’aider.<br><br>•&nbsp;Il m’explique mon problème en face à face par
-                    vidéo. Je peux aussi, pendant qu’il me parle, prendre une photo de mon exercice et lui envoyer par messagerie instantanée, le texter, et même lui envoyer un fichier.<br><br>•&nbsp;Quand c’est fini je raccroche, et je paye le cours
-                    à la minute passée avec le tuteur !<br><i class="fa fa-star" style="position: relative;left: 45%;top: 10px;"></i><br><br><br><span style="font-family: Adamina, serif;"><img style="width: 40px;position: relative;top: -10px;" src="assets/img/A++.png">Academy&nbsp;</span>c’est
-                    un service rapide et immédiat à vos besoins de soutien scolaire et d’aide aux devoirs.<br><br>C’est la possibilité de résoudre son problème, de poser ses questions précises sur un sujet, et d’avoir de l’aide sur le champs pour y répondre.<br><br>Et
-                    c’est surtout du soutien scolaire et de l’aide aux devoirs&nbsp;au moment où vous en avez besoin.<br><br>Il vous suffit de choisir votre forfait de minutes, et vous les utilisez quand vous voulez !<br></p>
+        <div id="div-comment"><i class="fa fa-star" style="color: white;font-size: 25px;display: flex;justify-content: center;align-items: center;"></i>
+            <h1 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-top: 70px;"><span style="text-decoration: underline;">Comment ça marche?</span></h1>
+            <div class="row" style="margin: 0px;">
+                <div class="col-sm-12 col-md-6 col-lg-7 col-xl-7" style="display: flex;">
+                    <p class="text-left" style="font-family: Lato, sans-serif;font-weight: 100;font-size: 25px;margin-left: 10px;margin-right: 10px;border-radius: 10px;color: white;margin-top: 30px;">•&nbsp;Je télécharge l’appli ou je me rends sur le site &nbsp;<span style="font-family: Adamina, serif;"><img style="width: 40px;position: relative;top: -5px;" src="assets/img/A++.png">Academy&nbsp;</span><br><br>•&nbsp;Je choisis
+                        la matière dans laquelle j’ai une question.<br><br>•&nbsp;Je suis mis immédiatement en relation par vidéo sur mon téléphone ou mon ordinateur avec un tuteur disponible pour m’aider.<br><br>•&nbsp;Il m’explique mon problème en face
+                        à face par vidéo. Je peux aussi, pendant qu’il me parle, prendre une photo de mon exercice et lui envoyer par messagerie instantanée, le texter, et même lui envoyer un fichier.<br><br>•&nbsp;Quand c’est fini je raccroche, et je
+                        paye le cours à la minute passée avec le tuteur !<br><i class="fa fa-star" style="position: relative;left: 45%;top: 10px;"></i><br><br><br><span style="font-family: Adamina, serif;"><img style="width: 40px;position: relative;top: -10px;" src="assets/img/A++.png">Academy&nbsp;</span>c’est
+                        un service rapide et immédiat à vos besoins de soutien scolaire et d’aide aux devoirs.<br><br>C’est la possibilité de résoudre son problème, de poser ses questions précises sur un sujet, et d’avoir de l’aide sur le champs pour
+                        y répondre.<br><br>Et c’est surtout du soutien scolaire et de l’aide aux devoirs&nbsp;au moment où vous en avez besoin.<br><br>Il vous suffit de choisir votre forfait de minutes, et vous les utilisez quand vous voulez !<br></p>
+                </div>
+                <div class="col" style="margin-top: 20px;"><img style="width: 100%;" src="assets/img/how_to.png"><img style="position: relative;float: left;width: 20vh;margin-left: 5vw;" src="assets/img/google_store.png"><img style="position: relative;float: right;width: 20vh;margin-right: 5vw;" src="assets/img/app_store.png">
+                    <img
+                        style="width: 80%;margin-left: 5vw;margin-top: 20px;" src="assets/img/happy.png"></div>
             </div>
-            <div class="col" style="margin-top: 20px;"><img style="width: 100%;" src="assets/img/how_to.png"><img style="position: relative;float: left;width: 20vh;margin-left: 5vw;" src="assets/img/google_store.png"><img style="position: relative;float: right;width: 20vh;margin-right: 5vw;" src="assets/img/app_store.png">
-                <img
-                    style="width: 80%;margin-left: 5vw;margin-top: 20px;" src="assets/img/happy.png"></div>
         </div>
-    </div>
-    <div id="div-forfaits">
-        <h1 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-top: 70px;margin-bottom: 20px;"><span style="text-decoration: underline;">Les Forfaits</span></h1>
-        <div class="row" style="margin: 10px;display: flex;justify-content: center;align-items: center;">
-            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" style="background-color: white;text-align: center;border-radius: 10px;padding: 10px;margin: 10px;"><img style="width: 15%;margin-bottom: 10px;" src="assets/img/logo_orange.png">
-                <h3 style="color: rgb(62,68,74);">15 Minutes:</h3>
-                <h3 style="color: rgb(62,68,74);">6,99 €</h3><a class="btn btn-primary" role="button" style="margin-top: 10px;height: 52px;width: 200px;background-color: #ee7752;color: rgb(255,255,255);line-height: 40px;font-size: 20px;" href="register.html">Choisir</a></div>
-            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3"
-                style="background-color: white;text-align: center;border-radius: 10px;padding: 10px;margin: 10px;"><img style="width: 15%;margin-bottom: 10px;" src="assets/img/logo_pink.png">
-                <h3 style="color: rgb(62,68,74);">30 Minutes:</h3>
-                <h3 style="color: rgb(62,68,74);">11,99 €</h3><a class="btn btn-primary" role="button" style="margin-top: 10px;height: 52px;width: 200px;background-color: #cc2b5e;color: rgb(255,255,255);line-height: 40px;font-size: 20px;" href="register.html">Choisir</a></div>
-            <div class="col-md-3 col-xl-3"
-                style="background-color: white;text-align: center;border-radius: 10px;padding: 10px;margin: 10px;"><img style="width: 15%;margin-bottom: 10px;" src="assets/img/logo_blue.png">
+        <div id="div-forfaits">
+            <h1 class="text-center" style="font-family: 'Permanent Marker', cursive;margin-top: 70px;margin-bottom: 20px;"><span style="text-decoration: underline;">Les Forfaits</span></h1>
+            <div class="row" style="margin: 10px;display: flex;justify-content: center;align-items: center;">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" style="background-color: white;text-align: center;border-radius: 10px;padding: 10px;margin: 10px;"><img style="width: 15%;margin-bottom: 10px;" src="assets/img/logo_orange.png">
+                    <h3 style="color: rgb(62,68,74);">15 Minutes:</h3>
+                    <h3 style="color: rgb(62,68,74);">6,99 €</h3><a class="btn btn-primary" role="button" style="margin-top: 10px;height: 52px;width: 200px;background-color: #ee7752;color: rgb(255,255,255);line-height: 40px;font-size: 20px;" href="register.html">Choisir</a></div>
+                <div
+                    class="col-sm-12 col-md-3 col-lg-3 col-xl-3" style="background-color: white;text-align: center;border-radius: 10px;padding: 10px;margin: 10px;"><img style="width: 15%;margin-bottom: 10px;" src="assets/img/logo_pink.png">
+                    <h3 style="color: rgb(62,68,74);">30 Minutes:</h3>
+                    <h3 style="color: rgb(62,68,74);">11,99 €</h3><a class="btn btn-primary" role="button" style="margin-top: 10px;height: 52px;width: 200px;background-color: #cc2b5e;color: rgb(255,255,255);line-height: 40px;font-size: 20px;" href="register.html">Choisir</a></div>
+            <div
+                class="col-md-3 col-xl-3" style="background-color: white;text-align: center;border-radius: 10px;padding: 10px;margin: 10px;"><img style="width: 15%;margin-bottom: 10px;" src="assets/img/logo_blue.png">
                 <h3 style="color: rgb(62,68,74);">60 Minutes:</h3>
                 <h3 style="color: rgb(62,68,74);">19,99 €</h3><a class="btn btn-primary" role="button" style="margin-top: 10px;height: 52px;width: 200px;background-color: #517ca3;color: rgb(255,255,255);line-height: 40px;font-size: 20px;" href="register.html">Choisir</a></div>
-        </div>
+    </div>
+    </div>
     </div>
     <div class="footer-clean">
         <footer>
@@ -150,6 +154,7 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/animsition.min.js"></script>
     <script src="assets/js/BS4-BetterNav.js"></script>
     <script src="assets/js/full-screen.js"></script>
     <script src="assets/js/Photo%20upload.js"></script>

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <link rel="stylesheet" href="assets/css/animsition.min.css">
     <link rel="stylesheet" href="assets/css/background.css">
     <link rel="stylesheet" href="assets/css/betternav.css">
     <link rel="stylesheet" href="assets/css/checkbox.css">
@@ -41,13 +42,14 @@
                     <div
                         class="collapse navbar-collapse" id="navcol-1" style="margin-left: 100px;">
                         <ul class="nav navbar-nav ml-auto nav-effect" style="font-family: 'Lato';">
-                            <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" id="link-accueil" href="index.html#div-accueil" onclick="closeMenu()">Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
+                            <div id="div-menu"><img src="assets/img/logo.png" style="position: relative;width: 70%;"></div>
+                            <li class="nav-item d-xl-flex align-items-xl-start" role="presentation"><a class="nav-link" id="link-accueil" href="index.html#div-accueil" onclick="closeMenu()" >Accueil<i class="fa fa-home" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" id="link-comment" href="index.html#div-comment" onclick="closeMenu()">Comment ça marche?<i class="material-icons" id="menu-icon">info</i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#div-forfaits" onclick="closeMenu()">Tarif<i class="fa fa-star" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="register.html" onclick="closeMenu()">S&#39;inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="index2.html" onclick="closeMenu()">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#div-forfaits" onclick="closeMenu()" >Tarif<i class="fa fa-star" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link animsition-link" href="register.html" onclick="closeMenu()">S&#39;inscrire<i class="fas fa-address-card" id="menu-icon"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index2.html" onclick="closeMenu()" data-animsition-out-class="fade-out-right">A propos de<i class="fab fa-readme" id="menu-icon"></i></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="modal" href="#modal-contact-us" onclick="closeMenu()">Contact<i class="fa fa-envelope" id="menu-icon"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="welcome.html" onclick="closeMenu()">Connexion  <i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" id="link-connexion" href="welcome.html" onclick="closeMenu()" data-animsition-out-class="fade-out-right">Connexion  <i class="fa fa-power-off" id="menu-icon-on"></i></a></li>
                         </ul>
                 </div>
         </div>
@@ -81,6 +83,7 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/animsition.min.js"></script>
     <script src="assets/js/BS4-BetterNav.js"></script>
     <script src="assets/js/full-screen.js"></script>
     <script src="assets/js/Photo%20upload.js"></script>
