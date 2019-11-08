@@ -6,14 +6,16 @@
  *  tree.
  */
 
+$(document).ready(function() {
+  start();
+});
+
 'use strict';
 
-const startButton = document.getElementById('startButton');
 const callButton = document.getElementById('callButton');
 const hangupButton = document.getElementById('hangupButton');
 callButton.disabled = true;
 hangupButton.disabled = true;
-startButton.addEventListener('click', start);
 callButton.addEventListener('click', call);
 hangupButton.addEventListener('click', hangup);
 
@@ -57,8 +59,6 @@ function getOtherPc(pc) {
 }
 
 async function start() {
-  console.log('Requesting local stream');
-  startButton.disabled = true;
   try {
     const stream = await navigator.mediaDevices.getUserMedia({audio: true, video: true});
     console.log('Received local stream');
