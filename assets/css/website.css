@@ -1522,14 +1522,23 @@ a {
 }
 
 
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none !important;
 }
 
-video::-webkit-media-controls {
-  display: none !important;
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none !important;
 }
 
-video::-webkit-media-controls-overlay-play-button {
-  display: none !important;
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none !important;
 }
